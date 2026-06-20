@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riviera &amp; Sardinia · Jul 31 – Aug 7, 2026 · with Grandma</title>
+<meta name="description" content="Eight days on two Italian coasts — the Portofino Coast with a Cinque Terre day, then the Costa Smeralda. Full itinerary, hotels, flights, trains and transfers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F2EA;--paper-2:#EDE6D8;--ink:#15293A;--ink-soft:#3E5666;
+    --sea:#1A5C77;--sea-deep:#103E52;--emerald:#0F8C7B;--emerald-deep:#0A5F54;
+    --coral:#D9774E;--line:rgba(21,41,58,.16);--line-strong:rgba(21,41,58,.32);
+    --card:#FBF8F2;--shadow:0 1px 0 rgba(21,41,58,.06), 0 18px 40px -28px rgba(16,62,82,.45);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:var(--sea)}a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  .display{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.03;letter-spacing:-.01em}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--sea);
+    display:inline-flex;align-items:center;gap:9px}
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--coral);transform:rotate(45deg);box-shadow:0 0 0 3px rgba(217,119,78,.18)}
+  .eyebrow.em{color:var(--emerald)}.eyebrow.em::before{background:var(--emerald);box-shadow:0 0 0 3px rgba(15,140,123,.18)}
+  .lede{font-size:18px;color:var(--ink-soft);max-width:64ch}
+
+  /* nav */
+  nav.bar{position:sticky;top:0;z-index:30;background:rgba(246,242,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav.bar .wrap{display:flex;gap:6px;align-items:center;padding:11px 22px;overflow-x:auto;white-space:nowrap}
+  nav.bar .brand{font-family:"Fraunces",serif;font-weight:600;margin-right:auto;font-size:15px}
+  nav.bar a{font-size:12.5px;letter-spacing:.03em;color:var(--ink-soft);text-decoration:none;padding:5px 10px;border-radius:8px}
+  nav.bar a:hover{background:var(--paper-2);color:var(--ink)}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero-img{position:absolute;inset:0}
+  .hero-img img{width:100%;height:100%;object-fit:cover}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,62,82,.36) 0%,rgba(16,62,82,.18) 38%,rgba(246,242,234,.88) 85%,var(--paper) 100%)}
+  .hero-inner{position:relative;padding:90px 0 38px}
+  .hero h1{font-size:clamp(42px,8vw,92px);font-weight:900;margin:.14em 0 .12em;color:#fff;text-shadow:0 2px 30px rgba(10,40,55,.45)}
+  .hero .kicker{color:#fff;text-shadow:0 1px 14px rgba(10,40,55,.5)}
+  .hero .sub{color:#0f2c3c;font-size:18px;max-width:64ch;margin-top:6px}
+  .stats{display:flex;flex-wrap:wrap;gap:26px 38px;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+  .stat .n{font-family:"Fraunces",serif;font-size:28px;font-weight:600;color:var(--sea-deep);line-height:1}
+  .stat .l{font-size:12.5px;letter-spacing:.05em;color:var(--ink-soft);margin-top:6px;text-transform:uppercase}
+
+  section{padding:58px 0}
+  section + section{border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:30px}
+  .sec-head h2{font-size:clamp(27px,4.2vw,38px);margin:13px 0 0;font-weight:600}
+  .sec-sub{color:var(--ink-soft);margin:10px 0 0;max-width:66ch}
+
+  .compare{background:var(--sea-deep);color:#EAF2F5;border-radius:14px;padding:24px 26px;
+    background-image:linear-gradient(120deg,var(--sea-deep) 0%,var(--sea-deep) 58%,var(--emerald-deep) 100%)}
+  .compare .eyebrow{color:#8FD0DE}.compare .eyebrow::before{background:var(--coral)}
+  .compare p{margin:11px 0 0;color:#D9E7EB}.compare b{color:#fff;font-weight:600}
+
+  /* timetable */
+  .tt{display:grid;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+  .tt .r{display:grid;grid-template-columns:92px 1fr 140px;gap:14px;padding:15px 18px;border-top:1px solid var(--line);align-items:center}
+  .tt .r:first-child{border-top:none}
+  .tt .r.sard{background:rgba(15,140,123,.05)}
+  .tt .r.train{background:rgba(217,119,78,.06)}
+  .tt .day{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--coral)}
+  .tt .r.sard .day{color:var(--emerald)}
+  .tt .route{font-family:"Fraunces",serif;font-weight:600;font-size:17.5px;color:var(--ink)}
+  .tt .route span{font-family:"Inter",sans-serif;font-weight:400;font-size:13px;color:var(--ink-soft);display:block;margin-top:2px;letter-spacing:0}
+  .tt .time{text-align:right;font-weight:600;color:var(--sea-deep);font-size:14px;white-space:nowrap}
+  .tt .time small{display:block;font-weight:400;color:var(--ink-soft);font-size:11.5px}
+  .legend{font-size:13px;color:var(--ink-soft);margin-top:12px}.legend b{color:var(--ink)}
+
+  /* day cards */
+  .day{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:32px 0;border-top:1px solid var(--line)}
+  .day:first-of-type{border-top:none}
+  .rail .num{font-family:"Fraunces",serif;font-weight:600;font-size:14px;color:#fff;background:var(--sea);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;box-shadow:0 6px 16px -8px rgba(16,62,82,.7)}
+  .day.sard .rail .num{background:var(--emerald);box-shadow:0 6px 16px -8px rgba(10,95,84,.7)}
+  .rail .tick{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+  .day .tag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+  .day.sard .tag{color:var(--emerald)}
+  .day h3{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(22px,3.3vw,29px);margin:6px 0 4px;line-height:1.08}
+  .day .meta{font-size:12.5px;color:var(--ink-soft);letter-spacing:.04em;margin-bottom:13px}
+  .day p.intro{color:var(--ink-soft);margin:0 0 16px}
+  .figs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px}
+  .figs.one{grid-template-columns:1fr}
+  figure{margin:0;border-radius:12px;overflow:hidden;background:var(--paper-2);box-shadow:var(--shadow)}
+  figure img{width:100%;height:200px;object-fit:cover}
+  figure figcaption{font-size:12.5px;color:var(--ink-soft);padding:9px 12px;background:var(--card)}
+  figure figcaption b{color:var(--ink);font-weight:600}
+  .irows{display:grid;margin:4px 0 0}
+  .irows .irow{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:11px 0;border-top:1px dashed var(--line)}
+  .irows .irow:first-child{border-top:none}
+  .irows .t{font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--sea)}
+  .day.sard .irows .t{color:var(--emerald)}
+  .irows .d{color:var(--ink-soft)}.irows .d b{color:var(--ink);font-weight:600}
+  .callout{display:grid;gap:8px;margin-top:16px}
+  .pill{font-size:14px;color:var(--ink-soft);background:var(--paper-2);border-radius:10px;padding:11px 14px}
+  .pill b{color:var(--ink);font-weight:600}
+  .book{margin-top:15px}
+  .book .bt{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin-bottom:8px}
+  .day.sard .book .bt{color:var(--emerald)}
+  .book ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+  .book li{display:flex;justify-content:space-between;gap:14px;font-size:14px;border-bottom:1px dotted var(--line);padding-bottom:6px}
+  .book li span:last-child{color:var(--sea-deep);font-weight:600;white-space:nowrap}
+
+  /* hotels */
+  .hgroup{margin-bottom:14px}
+  .hgroup h3{font-family:"Fraunces",serif;font-weight:600;font-size:23px;margin:0 0 4px}
+  .hgroup .sub{color:var(--ink-soft);font-size:14px;margin-bottom:18px}
+  .hotels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .hotel{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+  .hotel.pick{border-color:var(--emerald);box-shadow:0 0 0 1px var(--emerald),var(--shadow)}
+  .hotel .hi{height:152px;background:var(--paper-2)}
+  .hotel .hi img{width:100%;height:100%;object-fit:cover}
+  .hotel .hc{padding:15px 16px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+  .hotel .name{font-family:"Fraunces",serif;font-weight:600;font-size:18px;line-height:1.15}
+  .hotel .badge{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sea-deep);background:rgba(26,92,119,.12);border-radius:999px;padding:3px 10px;align-self:flex-start}
+  .hotel .badge.gold{color:#7a5408;background:rgba(217,119,78,.18)}
+  .hotel .badge.em{color:var(--emerald-deep);background:rgba(15,140,123,.16)}
+  .hotel .meta{font-size:12.5px;color:var(--ink-soft)}
+  .hotel .desc{font-size:13.5px;color:var(--ink-soft);flex:1}.hotel .desc b{color:var(--ink);font-weight:600}
+  .hotel .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px}
+  .hotel .rate{font-size:13px;color:var(--sea-deep);font-weight:600}
+  .hotel .cta{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+
+  /* logistics: connection cards + def lists + steps */
+  .conn{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .cx{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:18px;box-shadow:var(--shadow)}
+  .cx .h{font-family:"Fraunces",serif;font-weight:600;font-size:16px;margin-bottom:4px}
+  .cx .b{font-size:13.5px;color:var(--ink-soft)}.cx .b b{color:var(--ink);font-weight:600}
+  .cx .buf{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--emerald-deep);background:rgba(15,140,123,.14);border-radius:999px;padding:3px 11px}
+  .dl{display:grid;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:var(--card)}
+  .dl .drow{display:grid;grid-template-columns:215px 1fr;gap:16px;padding:14px 18px;border-top:1px solid var(--line)}
+  .dl .drow:first-child{border-top:none}
+  .dl .k{font-weight:600;color:var(--ink)}.dl .v{color:var(--ink-soft)}.dl .v b{color:var(--ink);font-weight:600}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  ol.steps li{display:grid;grid-template-columns:32px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+  ol.steps li::before{counter-increment:s;content:counter(s);font-family:"Fraunces",serif;font-weight:600;color:#fff;background:var(--sea);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px}
+  ol.steps .t{color:var(--ink-soft)}ol.steps .t b{color:var(--ink);font-weight:600}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .btns a{text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 15px;border-radius:10px}
+  .btns a.p{background:var(--sea);color:#fff}
+  .btns a.g{background:var(--emerald);color:#fff}
+  .btns a.o{background:var(--card);color:var(--ink);border:1px solid var(--line-strong)}
+  .note{font-size:13.5px;color:var(--ink-soft);background:var(--paper-2);border-left:3px solid var(--coral);border-radius:0 10px 10px 0;padding:13px 15px;margin-top:18px}
+  .note.em{border-left-color:var(--emerald)}.note b{color:var(--ink)}
+  .flag{background:#fff;border:1px solid var(--coral);border-radius:12px;padding:16px 18px;margin-top:12px}
+  .flag h3{margin:0 0 6px;font-family:"Fraunces",serif;font-weight:600;font-size:16px;color:#9a4a2b;display:flex;gap:8px;align-items:center}
+  .flag h3::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--coral);transform:rotate(45deg)}
+  .flag p{margin:0;color:var(--ink-soft);font-size:14px}.flag p b{color:var(--ink);font-weight:600}
+
+  /* know before */
+  .kbg{display:grid;grid-template-columns:1fr 1fr;gap:28px 42px}
+  .kbg h3{font-family:"Fraunces",serif;font-weight:600;font-size:19px;margin:0 0 10px;display:flex;align-items:center;gap:9px}
+  .kbg h3::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--coral);transform:rotate(45deg)}
+  .kbg ul{margin:0;padding-left:0;list-style:none;display:grid;gap:9px}
+  .kbg li{font-size:14.5px;color:var(--ink-soft);padding-left:18px;position:relative}
+  .kbg li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:1px;background:var(--line-strong)}
+  .kbg li b{color:var(--ink);font-weight:600}
+  .allergy{grid-column:1/-1;background:#fff;border:1px solid var(--coral);border-radius:12px;padding:18px 20px}
+  .allergy h3{color:#9a4a2b}.allergy h3::before{background:var(--coral)}
+
+  footer{background:var(--sea-deep);color:#C6DCDF;padding:42px 0 50px;background-image:linear-gradient(120deg,var(--sea-deep) 0%,var(--sea-deep) 55%,var(--emerald-deep) 100%)}
+  footer .display{color:#fff;font-size:24px;font-weight:600}
+  footer p{max-width:74ch;margin:13px 0 0;font-size:14.5px;color:#C6DCDF}footer b{color:#fff;font-weight:600}
+
+  @media (max-width:720px){
+    body{font-size:16px}
+    .hero-inner{padding:68px 0 28px}
+    .tt .r{grid-template-columns:72px 1fr;grid-template-areas:"day route" "time time";gap:6px 12px}
+    .tt .day{grid-area:day}.tt .route{grid-area:route}.tt .time{grid-area:time;text-align:left}
+    .day{grid-template-columns:42px 1fr;gap:13px}
+    .rail .num{width:34px;height:34px;font-size:12px}.rail .tick{display:none}
+    .figs{grid-template-columns:1fr}.figs figure img{height:220px}
+    .irows .irow{grid-template-columns:1fr;gap:2px}
+    .hotels{grid-template-columns:1fr}
+    .conn{grid-template-columns:1fr}
+    .dl .drow{grid-template-columns:1fr;gap:3px}
+    .kbg{grid-template-columns:1fr;gap:22px}
+    .stats{gap:18px 26px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="bar"><div class="wrap">
+  <span class="brand">Riviera &amp; Sardinia</span>
+  <a href="#overview">Overview</a>
+  <a href="#chain">Flights &amp; train</a>
+  <a href="#days">Day by day</a>
+  <a href="#hotels">Hotels</a>
+  <a href="#logistics">Logistics</a>
+  <a href="#know">Know before</a>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero" id="overview">
+  <div class="hero-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/1280px-Portofino%2C_Italy_2025.jpg" alt="The pastel harbour of Portofino"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow kicker">Italian Riviera &amp; the Emerald Coast</span>
+    <h1 class="display">Portofino &amp; Porto Cervo</h1>
+    <p class="sub">Eight days, two coasts — pastel harbours and a proper Cinque Terre day on the Ligurian Riviera, then a short hop to Sardinia's emerald water. The American round trip from Rome, a scenic train down to the coast, and one easy island hop in the middle.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">Fri Jul 31</div><div class="l">→ Fri Aug 7, 2026</div></div>
+      <div class="stat"><div class="n">3 nights</div><div class="l">Rapallo · Portofino Coast</div></div>
+      <div class="stat"><div class="n">3 nights</div><div class="l">Porto Cervo · Costa Smeralda</div></div>
+      <div class="stat"><div class="n">Cinque Terre</div><div class="l">a full day, locked in</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- COMPARE -->
+<section><div class="wrap">
+  <div class="compare">
+    <span class="eyebrow">How this version works</span>
+    <p>Same slow, spa-forward rhythm as Puglia and Sicily, across <b>two famous coasts</b>. You keep the <b>American round trip into and out of Rome</b>, then instead of a second flight you take a <b>scenic train down to the Riviera</b> — no extra airport on arrival. The only flight inside the trip is the one unavoidable island crossing, <b>Genoa → Olbia</b>, mid-trip.</p>
+  </div>
+</div></section>
+
+<!-- FLIGHT + TRAIN CHAIN -->
+<section id="chain"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">The plan at a glance</span><h2 class="display">Flights &amp; train</h2>
+    <p class="sec-sub">Two transatlantic flights on American, one scenic train, one island hop, and one island return. Times are indicative from current schedules — confirm exact times when you book, ~6–8 weeks out.</p></div>
+  <div class="tt">
+    <div class="r"><div class="day">Fri · Jul 31</div>
+      <div class="route">MIA → FCO <span>Miami to Rome · American AA052 · nonstop · Flagship Business (lie-flat) available</span></div>
+      <div class="time">19:10 → 11:20<small>+1 · ~10h</small></div></div>
+    <div class="r train"><div class="day">Sat · Aug 1</div>
+      <div class="route">Rome → Rapallo <span>by train · Leonardo Express to Termini, then Frecciarossa down the coast</span></div>
+      <div class="time">~4h<small>fastest 3h49</small></div></div>
+    <div class="r sard"><div class="day">Tue · Aug 4</div>
+      <div class="route">GOA → OLB <span>Genoa to Olbia · Volotea (seasonal) · the one island hop</span></div>
+      <div class="time">~15:10 → 16:15<small>~1h05</small></div></div>
+    <div class="r sard"><div class="day">Fri · Aug 7</div>
+      <div class="route">OLB → FCO <span>Olbia to Rome · ITA / Volotea · morning</span></div>
+      <div class="time">~08:30 → 09:35<small>~1h</small></div></div>
+    <div class="r"><div class="day">Fri · Aug 7</div>
+      <div class="route">FCO → MIA <span>Rome to Miami · American AA053 · nonstop · same return ticket</span></div>
+      <div class="time">~14:30 → 19:55<small>same day ET · ~11h</small></div></div>
+  </div>
+  <p class="legend"><b>What changed:</b> the old Rome → Genoa flight is gone — you arrive Rome on American and <b>train</b> to the coast. The American MIA ⇄ FCO round trip is unchanged. Genoa → Olbia stays (it's the island crossing), and Olbia → Rome feeds the American flight home.</p>
+</div></section>
+
+<!-- DAY BY DAY -->
+<section id="days"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Day by day</span><h2 class="display">The journey</h2></div>
+
+  <article class="day"><div class="rail"><div class="num">01</div><div class="tick">Fri · Jul 31</div></div>
+    <div><div class="tag">Travel</div><h3>Depart Miami</h3>
+      <div class="meta">Fri · Jul 31 · overnight to Rome</div>
+      <p class="intro">An easy start — nothing to do but get on the plane and sleep across the Atlantic.</p>
+      <div class="irows">
+        <div class="irow"><div class="t">Evening</div><div class="d">Light dinner before the gate. American <b>AA052</b> MIA → Rome, ~7:10 PM. Grandma lie-flat in Flagship Business on the 777.</div></div>
+        <div class="irow"><div class="t">Onboard</div><div class="d">Overnight flight. Aim to sleep — tomorrow ends on the Riviera.</div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day"><div class="rail"><div class="num">02</div><div class="tick">Sat · Aug 1</div></div>
+    <div><div class="tag">Riviera</div><h3>Land in Rome → train to Rapallo</h3>
+      <div class="meta">Sat · Aug 1 · scenic rail, then settle</div>
+      <p class="intro">No second flight today — land in Rome and take the train up and over to the Ligurian coast, the last stretch running right along the sea.</p>
+      <div class="figs">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Rapallo-IMG_0436.JPG" alt="Rapallo seafront"><figcaption><b>Rapallo</b> — your base on the Gulf of Tigullio for three nights</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/1280px-Portofino%2C_Italy_2025.jpg" alt="Portofino"><figcaption><b>Portofino</b> — a short boat ride away, for tomorrow</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">Late AM</div><div class="d">Land Rome (AA052) ~11:20. Clear customs, collect bags.</div></div>
+        <div class="irow"><div class="t">Midday</div><div class="d"><b>Leonardo Express</b> FCO → Roma Termini (~32 min), then a <b>Frecciarossa / Frecciabianca</b> to Rapallo (~4 hrs, some direct, some change at Genova).</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Arrive Rapallo early evening, check in, dinner on the seafront. That's the whole assignment.</div></div>
+      </div>
+      <div class="callout"><div class="pill"><b>Comfort for the ride:</b> book <b>Business</b> or <b>Executive</b> class on the Frecciarossa — bigger seats, and Executive adds station lounge access, Fast Track, and a meal served at your seat. A gentle way to spend the afternoon after the redeye.</div></div>
+    </div>
+  </article>
+
+  <article class="day"><div class="rail"><div class="num">03</div><div class="tick">Sun · Aug 2</div></div>
+    <div><div class="tag">Riviera</div><h3>Portofino &amp; Santa Margherita</h3>
+      <div class="meta">Sun · Aug 2 · arrive by sea, then spa</div>
+      <p class="intro">The postcard day — reach Portofino the proper way, by boat across the gulf, then the gentler glamour of Santa Margherita, with the pool and spa for the heat of the afternoon.</p>
+      <div class="figs">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Santa_Margherita_Ligure%2C_Italy.jpg" alt="Santa Margherita Ligure"><figcaption><b>Santa Margherita Ligure</b> — palm-lined and easy to stroll</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/BasilPesto.JPG" alt="Ligurian pesto"><figcaption><b>Pesto alla genovese</b> — Liguria's great non-fish specialty</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">9:30 AM</div><div class="d">Ferry from Rapallo to <b>Portofino</b> — the famous piazzetta, the harbour, an easy walk up to San Giorgio for the view.</div></div>
+        <div class="irow"><div class="t">Lunch</div><div class="d">Trofie al pesto on the harbour (non-fish is easy here — see the allergy note below).</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Stop in <b>Santa Margherita</b> on the way back, then the hotel pool and spa during peak heat.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Aperitivo on the Rapallo seafront, then dinner.</div></div>
+      </div>
+      <div class="book"><div class="bt">Bookable experiences</div><ul>
+        <li><span>Rapallo–Portofino ferry (Tigullio line)</span><span>from $10</span></li>
+        <li><span>Private boat tour of the headland &amp; San Fruttuoso abbey</span><span>from $70</span></li>
+        <li><span>Pesto-making class in Santa Margherita</span><span>from $55</span></li>
+      </ul></div>
+    </div>
+  </article>
+
+  <article class="day"><div class="rail"><div class="num">04</div><div class="tick">Mon · Aug 3</div></div>
+    <div><div class="tag">Riviera · the must-see</div><h3>Cinque Terre</h3>
+      <div class="meta">Mon · Aug 3 · the five villages, the easy way</div>
+      <p class="intro">The day you came for. Five pastel villages stacked above the sea — done by train and boat rather than the cliff trails, with two villages rather than all five.</p>
+      <div class="figs">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vernazza_and_the_sea%2C_Cinque_Terre%2C_Italy.jpg/1280px-Vernazza_and_the_sea%2C_Cinque_Terre%2C_Italy.jpg" alt="Vernazza"><figcaption><b>Vernazza</b> — the most photogenic of the five</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg/1280px-Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg" alt="Manarola"><figcaption><b>Manarola</b> — the classic viewpoint</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">Morning</div><div class="d">Train from Santa Margherita / Rapallo (~1 hr) to <b>Monterosso</b> — the flattest village, and the one with a real beach.</div></div>
+        <div class="irow"><div class="t">Midday</div><div class="d">Hop one stop to <b>Vernazza</b> for the harbour and lunch. Minutes between villages; no hiking required.</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Optional scenic <b>ferry</b> back past Manarola and Riomaggiore — the coastline from the water.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Back to Rapallo for a quiet dinner.</div></div>
+      </div>
+      <div class="callout"><div class="pill"><b>Pacing for two:</b> the villages are steep and packed in August. Early start, flat Monterosso plus Vernazza, and the ferry instead of the trails keeps it gentle.</div></div>
+      <div class="book"><div class="bt">Bookable experiences</div><ul>
+        <li><span>Cinque Terre train + ferry day pass</span><span>from $45</span></li>
+        <li><span>Small-group boat tour of the five villages from Levanto</span><span>from $60</span></li>
+        <li><span>Private driver + guide day from Rapallo</span><span>from $90</span></li>
+      </ul></div>
+    </div>
+  </article>
+
+  <article class="day sard"><div class="rail"><div class="num">05</div><div class="tick">Tue · Aug 4</div></div>
+    <div><div class="tag">→ Sardinia</div><h3>Hop to the Costa Smeralda</h3>
+      <div class="meta">Tue · Aug 4 · Genoa → Olbia → Porto Cervo</div>
+      <p class="intro">The coast changes character today — from Ligurian pastel to Sardinian granite and emerald water, your base for the back half.</p>
+      <div class="figs">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda"><figcaption><b>Costa Smeralda</b> — emerald water and white-granite coves</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo"><figcaption><b>Porto Cervo</b> — the marina village and its piazzetta</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">Morning</div><div class="d">Train Rapallo → Genova (~35 min) or a private car straight to Genoa airport (~40 min).</div></div>
+        <div class="irow"><div class="t">Early PM</div><div class="d">Genoa → <b>Olbia</b> (~1h05). Private transfer ~40 min to <b>Porto Cervo</b>. Check in, pool, beach path or spa.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Stroll the <b>Porto Cervo</b> piazzetta and marina at golden hour, then dinner.</div></div>
+      </div>
+      <div class="callout"><div class="pill"><b>Base · Grand Hotel in Porto Cervo</b> — on the bay above <b>Cala Granu</b> beach, with a direct path down to reserved loungers, a panoramic pool and a small spa. Gentle and beach-easy.</div></div>
+    </div>
+  </article>
+
+  <article class="day sard"><div class="rail"><div class="num">06</div><div class="tick">Wed · Aug 5</div></div>
+    <div><div class="tag">Sardinia</div><h3>Emerald beaches &amp; spa</h3>
+      <div class="meta">Wed · Aug 5 · the famous coves, at your pace</div>
+      <p class="intro">The slow Sardinia day — the most beautiful water of the trip, a long lunch, and the spa when the sun is high.</p>
+      <div class="figs one">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda cove"><figcaption><b>The Costa Smeralda coves</b> — Cala Granu at the hotel, or the famous beaches a short drive south</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">Morning</div><div class="d">Beach time — the hotel's <b>Cala Granu</b>, or a short drive to <b>Spiaggia del Principe</b> and <b>Capriccioli</b>.</div></div>
+        <div class="irow"><div class="t">Lunch</div><div class="d">A beach-club lunch — Sardinian, not fish-bound (roast meats, culurgiones, pecorino).</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Spa and pool through peak heat.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Aperitivo in Porto Cervo, then dinner.</div></div>
+      </div>
+      <div class="book"><div class="bt">Bookable experiences</div><ul>
+        <li><span>Private driver — Costa Smeralda beaches half day</span><span>from $80</span></li>
+        <li><span>Spiaggia del Principe &amp; Capriccioli sun-bed reservations</span><span>from $30</span></li>
+        <li><span>Porto Cervo walking &amp; aperitivo evening</span><span>from $35</span></li>
+      </ul></div>
+    </div>
+  </article>
+
+  <article class="day sard"><div class="rail"><div class="num">07</div><div class="tick">Thu · Aug 6</div></div>
+    <div><div class="tag">Sardinia</div><h3>La Maddalena archipelago by boat</h3>
+      <div class="meta">Thu · Aug 6 · the day on the water</div>
+      <p class="intro">The coastal headline — a boat day through the <b>La Maddalena</b> islands, some of the clearest water in the Mediterranean, with calm swim stops and shade aboard.</p>
+      <div class="figs one">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/La_Maddalena_-_Il_porto_%2802%29.JPG/1280px-La_Maddalena_-_Il_porto_%2802%29.JPG" alt="La Maddalena"><figcaption><b>La Maddalena</b> — a protected archipelago of pink-tinged sand and turquoise shallows</figcaption></figure>
+      </div>
+      <div class="irows">
+        <div class="irow"><div class="t">Morning</div><div class="d">Board at Cannigione or Palau for a <b>La Maddalena</b> cruise — Spargi, Budelli's pink beach, the Caprera shallows.</div></div>
+        <div class="irow"><div class="t">Onboard</div><div class="d">Shaded deck, calm anchorages, swim stops. Grandma can stay aboard and take in the islands.</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Back to the spa, or a last dip at the hotel beach.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Last Sardinian dinner in Porto Cervo.</div></div>
+      </div>
+      <div class="book"><div class="bt">Bookable experiences</div><ul>
+        <li><span>La Maddalena small-group day cruise</span><span>from $55</span></li>
+        <li><span>Private gozzo / gulet charter (half or full day)</span><span>from $120</span></li>
+        <li><span>Caprera &amp; Garibaldi house add-on</span><span>from $15</span></li>
+      </ul></div>
+    </div>
+  </article>
+
+  <article class="day sard"><div class="rail"><div class="num">08</div><div class="tick">Fri · Aug 7</div></div>
+    <div><div class="tag">Home</div><h3>Olbia → Rome → Miami</h3>
+      <div class="meta">Fri · Aug 7 · all the way home, same day</div>
+      <div class="irows">
+        <div class="irow"><div class="t">Early</div><div class="d">Leave the hotel ~06:45, car to Olbia airport (~40 min), <b>OLB → Rome</b> ~08:30.</div></div>
+        <div class="irow"><div class="t">Midday</div><div class="d">Lunch / lounge at Fiumicino, then <b>American AA053</b> Rome → Miami (~14:30).</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Land Miami the same day (~19:55 ET).</div></div>
+      </div>
+      <div class="callout"><div class="pill"><b>Heads-up on the return:</b> the Olbia → Rome flight is a <b>separate ticket</b> from the American transatlantic, so leave a generous buffer (this plan gives ~5 hrs in Rome). See the logistics flag below for the zero-risk overnight option.</div></div>
+    </div>
+  </article>
+</div></section>
+
+<!-- HOTELS -->
+<section id="hotels"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Where to stay</span><h2 class="display">Hotel shortlist</h2>
+    <p class="sec-sub">Rates are indicative August bands for two adults, not live quotes — confirm for your dates before booking. Costa Smeralda runs hot in August.</p></div>
+
+  <div class="hgroup">
+    <h3>Rapallo / Portofino Coast — 3 nights · Aug 1–4</h3>
+    <div class="sub">Belle Époque grandeur on the Tigullio gulf, walkable to the boats and the Cinque Terre train.</div>
+    <div class="hotels">
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Rapallo-IMG_0436.JPG" alt="Rapallo bay"></div>
+        <div class="hc"><span class="badge gold">The base pick</span><div class="name">Excelsior Palace Portofino Coast</div>
+          <div class="meta">5★ · Rapallo · the only 5-star on the Portofino Coast</div>
+          <div class="desc">A 1901 grande dame between the bays of Rapallo and Portofino, with <b>two sea-facing infinity pools</b>, a beach club and a spa. Walkable to the train station for the Cinque Terre and Portofino days.</div>
+          <div class="foot"><span class="rate">~$770–1,100/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Excelsior+Palace+Portofino+Coast+Rapallo&checkin=2026-08-01&checkout=2026-08-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        </div>
+      </div>
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Santa_Margherita_Ligure%2C_Italy.jpg" alt="Santa Margherita"></div>
+        <div class="hc"><span class="badge">Like VISTA ✓ · LHW</span><div class="name">Grand Hotel Miramare</div>
+          <div class="meta">5★ · Santa Margherita Ligure · Leading Hotels of the World</div>
+          <div class="desc">A refined seafront palazzo in <b>Santa Margherita</b>, the same Leading Hotels family as VISTA Ostuni, with a heated saltwater pool and gardens over the bay.</div>
+          <div class="foot"><span class="rate">~$1,300–1,900/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+Miramare+Santa+Margherita+Ligure&checkin=2026-08-01&checkout=2026-08-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hgroup" style="margin-top:32px">
+    <h3>Porto Cervo / Costa Smeralda — 3 nights · Aug 4–7</h3>
+    <div class="sub">Your chosen base, plus two more coastal options nearby.</div>
+    <div class="hotels">
+      <div class="hotel pick"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo bay"></div>
+        <div class="hc"><span class="badge em">Your pick ✓</span><div class="name">Grand Hotel in Porto Cervo</div>
+          <div class="meta">4★ · Porto Cervo Bay · above Cala Granu beach</div>
+          <div class="desc">On the bay near <b>Cala Granu</b>, with a panoramic pool, a small spa and a <b>direct path to a private beach</b> with reserved loungers. Sea-view terraces, ~40 min from Olbia. The gentle, beach-easy choice.</div>
+          <div class="foot"><span class="rate">~$650–1,100/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+in+Porto+Cervo&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        </div>
+      </div>
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo"></div>
+        <div class="hc"><span class="badge">Alt · 5★ in the village</span><div class="name">Colonna Resort</div>
+          <div class="meta">5★ · Porto Cervo · 600 sqm spa, park setting</div>
+          <div class="desc">The largest 5-star right by <b>Porto Cervo</b>, set in a 60,000 sqm park with a big spa and pools, shuttle to the beach. The most resort-style stay of the three, a short hop from the marina.</div>
+          <div class="foot"><span class="rate">~$800–1,700/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Colonna+Resort+Porto+Cervo&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        </div>
+      </div>
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda coast"></div>
+        <div class="hc"><span class="badge">Alt · La Maddalena views</span><div class="name">Grand Hotel Poltu Quatu</div>
+          <div class="meta">5★ · a fjord-like cove near Porto Cervo &amp; Baja Sardinia</div>
+          <div class="desc">A glamorous 5-star tucked in a granite inlet <b>overlooking the La Maddalena islands</b>, with an outdoor pool, spa and a private beach by shuttle. Strong value for the coast in August.</div>
+          <div class="foot"><span class="rate">~$600–1,400/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+Poltu+Quatu&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- LOGISTICS -->
+<section id="logistics"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Logistics</span><h2 class="display">Getting there, and around</h2>
+    <p class="sec-sub">Connections, transfers, what to book in what order, live fares, and the few things to verify.</p></div>
+
+  <h3 class="display" style="font-size:21px;margin:6px 0 14px">The connections that matter</h3>
+  <div class="conn">
+    <div class="cx"><div class="h">Arrival in Rome</div><div class="b">No flight to connect — land FCO <b>11:20</b>, Leonardo Express to Termini, train north. Relaxed and on your own clock.</div><div class="buf">No tight link</div></div>
+    <div class="cx"><div class="h">Genoa → Olbia</div><div class="b">Its own travel day (Tue Aug 4). Morning in Rapallo, ~40 min to Genoa airport, midday flight south. <b>Nothing to miss.</b></div><div class="buf">Standalone day</div></div>
+    <div class="cx"><div class="h">Return via Rome</div><div class="b">OLB → FCO lands <b>~09:35</b>; American FCO → MIA departs <b>~14:30</b>. Separate tickets, so the <b>~5h buffer</b> is the safety margin.</div><div class="buf">~5h buffer</div></div>
+  </div>
+
+  <h3 class="display" style="font-size:21px;margin:30px 0 14px">Ground transfers</h3>
+  <div class="dl">
+    <div class="drow"><div class="k">FCO airport → Roma Termini</div><div class="v"><b>Leonardo Express ~32 min</b> (every 15–30 min), or a private car ~45 min. Sat Aug 1.</div></div>
+    <div class="drow"><div class="k">Roma Termini → Rapallo</div><div class="v"><b>Frecciarossa / Frecciabianca ~4 hrs</b> (fastest 3h49; ~18/day, some direct, some change at Genova). Book Business or Executive. Sat Aug 1.</div></div>
+    <div class="drow"><div class="k">Rapallo ⇄ Portofino</div><div class="v">Local <b>ferry ~30 min</b> or car ~25 min. Sun Aug 2.</div></div>
+    <div class="drow"><div class="k">Rapallo → Cinque Terre</div><div class="v"><b>Train ~1 hr</b> to Monterosso; Cinque Terre Express between villages; ferry back. Mon Aug 3.</div></div>
+    <div class="drow"><div class="k">Rapallo → Genoa airport</div><div class="v"><b>~40 min</b> private car (or train Rapallo→Genova ~35 min + airport shuttle). Tue Aug 4.</div></div>
+    <div class="drow"><div class="k">Olbia airport → Porto Cervo</div><div class="v"><b>~40 min</b> private car (~30 km). Hotel can arrange. Tue Aug 4.</div></div>
+    <div class="drow"><div class="k">Porto Cervo → Olbia airport</div><div class="v"><b>~40 min</b> private car. Fri Aug 7 — leave ~06:45 for the ~08:30 flight.</div></div>
+  </div>
+
+  <h3 class="display" style="font-size:21px;margin:30px 0 14px">What to book, in what order</h3>
+  <ol class="steps">
+    <li><div><b>American round trip, Rome.</b><div class="t">Book <b>MIA ⇄ FCO on American</b> (AA052 out Jul 31 / AA053 home Aug 7). Choose <b>Flagship Business</b> for Grandma's lie-flat on the 777 — this is the leg that matters.</div></div></li>
+    <li><div><b>The train to Rapallo.</b><div class="t">Roma Termini → Rapallo on Trenitalia (Frecciarossa/Frecciabianca). Book a few weeks out; reserve Business or Executive seats. Plus the Leonardo Express FCO→Termini.</div></div></li>
+    <li><div><b>The two island flights.</b><div class="t">Genoa → Olbia on <b>Volotea</b> (confirm Tue Aug 4), and Olbia → Rome on ITA/Volotea for the morning of Aug 7 — both economy, separate from the American ticket.</div></div></li>
+    <li><div><b>Transfers &amp; experiences.</b><div class="t">Private cars (Rapallo→Genoa, Olbia→Porto Cervo, Porto Cervo→Olbia), the Portofino ferry, Cinque Terre passes, and the La Maddalena boat. Reserve dinners — peak August.</div></div></li>
+  </ol>
+
+  <h3 class="display" style="font-size:21px;margin:30px 0 14px">Live fares &amp; booking links</h3>
+  <p class="sec-sub" style="margin-bottom:16px">Indicative current levels per person for peak early-August. Prices move constantly and can't be locked here — the links open each search with your dates and cabin set, where you'll see the real bookable fare.</p>
+  <div class="dl">
+    <div class="drow"><div class="k">Miami ⇄ Rome · American</div><div class="v">Economy <b>~$1,100–1,500</b> RT · <b style="color:var(--emerald-deep)">Flagship Business (lie-flat) ~$3,500–6,000</b> RT. Grandma's leg.</div></div>
+    <div class="drow"><div class="k">Rome → Rapallo · Trenitalia</div><div class="v">Business <b>~€55–95</b> · Executive <b>~€120–180</b> · plus Leonardo Express ~€14.</div></div>
+    <div class="drow"><div class="k">Genoa → Olbia · Volotea</div><div class="v">Economy <b>~$45–110</b> one-way. All-economy carrier.</div></div>
+    <div class="drow"><div class="k">Olbia → Rome · ITA / Volotea</div><div class="v">Economy <b>~$40–120</b> one-way.</div></div>
+  </div>
+  <div class="btns">
+    <a class="p" href="https://www.aa.com/booking/flights/choose-flights" target="_blank" rel="noopener">Book American · Business →</a>
+    <a class="g" href="https://www.kayak.com/flights/MIA-FCO/2026-07-31/2026-08-07/business?sort=price_a" target="_blank" rel="noopener">Live business fare · Miami ⇄ Rome →</a>
+    <a class="o" href="https://www.thetrainline.com/en/train-times/rome-to-rapallo" target="_blank" rel="noopener">Train · Rome → Rapallo →</a>
+    <a class="o" href="https://www.kayak.com/flights/GOA-OLB/2026-08-04" target="_blank" rel="noopener">Hop · Genoa → Olbia →</a>
+    <a class="o" href="https://www.kayak.com/flights/OLB-FCO/2026-08-07" target="_blank" rel="noopener">Island return · Olbia → Rome →</a>
+    <a class="o" href="https://www.google.com/travel/flights" target="_blank" rel="noopener">Compare on Google Flights →</a>
+  </div>
+  <p class="legend" style="margin-top:14px">The Kayak link carries your dates and the Business cabin in the URL; filter to American for the round trip that matches your transatlantic.</p>
+
+  <h3 class="display" style="font-size:21px;margin:32px 0 12px">Contingencies &amp; flags</h3>
+  <div class="flag"><h3>Confirm the Tuesday Genoa → Olbia flight</h3>
+    <p>Genoa → Olbia runs about <b>8 times a week</b> in summer — frequent but not daily. Verify a flight on <b>Tue Aug 4</b> on Volotea or ITA. If the day has none, the clean fallback is <b>Genoa → Rome → Olbia on ITA</b> the same day; an overnight ferry exists but isn't worth it.</p></div>
+  <div class="flag"><h3>The return is on two tickets</h3>
+    <p>American doesn't fly Olbia, so the <b>Olbia → Rome feeder is a separate ticket</b> from the American transatlantic. This plan leaves ~5 hrs in Rome, which is comfortable. For zero risk, fly Olbia → Rome the <b>evening before</b> and overnight at an FCO airport hotel — at the cost of one Sardinia night.</p></div>
+  <div class="flag"><h3>Times will firm up closer in</h3>
+    <p>Flight and train times above come from current schedules; reconfirm exact departures and seats when you book, ideally <b>6–8 weeks out</b>.</p></div>
+</div></section>
+
+<!-- KNOW BEFORE -->
+<section id="know"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Before you go</span><h2 class="display">Know before you go</h2></div>
+  <div class="kbg">
+    <div><h3>Timing &amp; events</h3><ul>
+      <li><b>Peak season:</b> Aug 1–7 is the busiest, priciest week on both coasts — book hotels, transfers, the boat and dinners well ahead.</li>
+      <li><b>Cinque Terre on a Monday (Aug 3)</b> is busy but a touch calmer than the weekend; early train and afternoon ferry is the way.</li>
+      <li><b>Porto Cervo</b> is at its glittering peak in early August — worth a dinner reservation everywhere.</li>
+      <li><b>Ferragosto (Aug 15)</b> falls after your trip, so you miss the single most chaotic day.</li>
+    </ul></div>
+    <div><h3>Pacing for two</h3><ul>
+      <li><b>The arrival train</b> is long after a redeye — Business/Executive seats and a relaxed boarding make it restful, not tiring.</li>
+      <li><b>Cinque Terre</b> villages are steep — flat Monterosso plus Vernazza, by train and ferry, skip the trails.</li>
+      <li>Your <b>Grand Hotel</b> has a direct path to Cala Granu beach — no boat shuttle.</li>
+      <li>The <b>La Maddalena</b> boat day is seated and shaded.</li>
+    </ul></div>
+    <div class="allergy"><h3>A note on the fish allergy</h3><ul>
+      <li>Both coasts love seafood — flag it every time: <i>"Sono allergica al pesce e ai frutti di mare."</i> In Liguria, watch for <b>anchovies (acciughe)</b> hidden in sauces.</li>
+      <li><b>Liguria is easy:</b> <b>pesto</b> (trofie/trenette), <b>focaccia</b>, <b>farinata</b>, <b>pansoti with walnut sauce</b> — all fish-free.</li>
+      <li><b>Sardinia too:</b> <b>porceddu</b> (roast suckling pig), <b>culurgiones</b>, <b>pane carasau</b>, <b>pecorino</b>, and <b>seadas</b> for dessert.</li>
+      <li>Carry an allergy card in Italian and keep meds on hand, especially on boat days.</li>
+    </ul></div>
+    <div><h3>Booking notes</h3><ul>
+      <li><b>One round trip, one train, two island flights</b> — far fewer moving parts than two separate fly-in legs.</li>
+      <li>Confirm the Tue Aug 4 Genoa → Olbia flight early.</li>
+      <li>Keep the Olbia → Rome feeder's buffer generous, since it's a separate ticket.</li>
+      <li>Reserve the boat, the ferry, Cinque Terre passes and dinners ahead.</li>
+    </ul></div>
+    <div><h3>Good to know</h3><ul>
+      <li>Italy uses Type F/L plugs, 230V — bring adapters.</li>
+      <li>Carry some cash; smaller spots can be card-shy.</li>
+      <li>No rental car needed — train, ferry and private transfers cover everything.</li>
+      <li>Validate regional train tickets before boarding where required.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="display">Riviera &amp; Sardinia · Fri Jul 31 – Fri Aug 7, 2026.</div>
+  <p>American round trip into and out of Rome · a scenic Frecciarossa down to the Portofino Coast · 3 nights Rapallo with Portofino, Santa Margherita and a full Cinque Terre day · one island hop to Sardinia · 3 nights at the Grand Hotel in Porto Cervo with emerald beaches and a La Maddalena boat day · same-day return via Rome. The same slow, spa-forward pace as Puglia and Sicily — two coasts, with Grandma.</p>
+</div></footer>
+
+</body>
+</html>
