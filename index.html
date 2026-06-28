@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riviera &amp; Sardinia · Jul 31 – Aug 7, 2026 · with Grandma</title>
-<meta name="description" content="Eight days on two Italian coasts — the Portofino Coast with a Cinque Terre day, then the Costa Smeralda. Full itinerary, hotels, flights, trains and transfers.">
+<title>Riviera &amp; Sardinia · Jul 31 – Aug 9, 2026</title>
+<meta name="description" content="Nine days across two Italian coasts — Santa Margherita Ligure with Portofino and a Cinque Terre day, then the Costa Smeralda at Porto Cervo, with an open Milan finish. Flights, hotels, car, dining and logistics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -100,12 +100,27 @@
   .callout{display:grid;gap:8px;margin-top:16px}
   .pill{font-size:14px;color:var(--ink-soft);background:var(--paper-2);border-radius:10px;padding:11px 14px}
   .pill b{color:var(--ink);font-weight:600}
+  .pill.dine{background:rgba(26,92,119,.08);border-left:3px solid var(--sea)}
+  .day.sard .pill.dine{background:rgba(15,140,123,.08);border-left-color:var(--emerald)}
   .book{margin-top:15px}
   .book .bt{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin-bottom:8px}
   .day.sard .book .bt{color:var(--emerald)}
   .book ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
   .book li{display:flex;justify-content:space-between;gap:14px;font-size:14px;border-bottom:1px dotted var(--line);padding-bottom:6px}
   .book li span:last-child{color:var(--sea-deep);font-weight:600;white-space:nowrap}
+
+  /* dining */
+  .dine-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+  .dcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 19px;box-shadow:var(--shadow)}
+  .dcard h3{font-family:"Fraunces",serif;font-weight:600;font-size:18px;margin:0 0 4px}
+  .dcard .place{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-bottom:12px}
+  .dcard.em .place{color:var(--emerald)}
+  .dcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+  .dcard li{font-size:13.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:10px}
+  .dcard li:first-child{border-top:none;padding-top:0}
+  .dcard li b{color:var(--ink);font-weight:600;display:block}
+  .dcard li .tagx{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--sea)}
+  .dcard.em li .tagx{color:var(--emerald-deep)}
 
   /* hotels */
   .hgroup{margin-bottom:14px}
@@ -177,6 +192,7 @@
     .rail .num{width:34px;height:34px;font-size:12px}.rail .tick{display:none}
     .figs{grid-template-columns:1fr}.figs figure img{height:220px}
     .irows .irow{grid-template-columns:1fr;gap:2px}
+    .dine-grid{grid-template-columns:1fr}
     .hotels{grid-template-columns:1fr}
     .conn{grid-template-columns:1fr}
     .dl .drow{grid-template-columns:1fr;gap:3px}
@@ -191,8 +207,9 @@
 <nav class="bar"><div class="wrap">
   <span class="brand">Riviera &amp; Sardinia</span>
   <a href="#overview">Overview</a>
-  <a href="#chain">Flights &amp; train</a>
+  <a href="#chain">Flights &amp; car</a>
   <a href="#days">Day by day</a>
+  <a href="#dining">Dining</a>
   <a href="#hotels">Hotels</a>
   <a href="#logistics">Logistics</a>
   <a href="#know">Know before</a>
@@ -204,12 +221,12 @@
   <div class="wrap hero-inner">
     <span class="eyebrow kicker">Italian Riviera &amp; the Emerald Coast</span>
     <h1 class="display">Portofino &amp; Porto Cervo</h1>
-    <p class="sub">Eight days, two coasts — pastel harbours and a proper Cinque Terre day on the Ligurian Riviera, then a short hop to Sardinia's emerald water. The American round trip from Rome, a scenic train down to the coast, and one easy island hop in the middle.</p>
+    <p class="sub">Nine days, two coasts — a base in Santa Margherita Ligure for Portofino and a proper Cinque Terre day, then a short flight to Sardinia's emerald water at Porto Cervo, with an open few days in Milan to finish. Miami to Madrid to Milan, a rental car down the Riviera, and one easy island hop in the middle.</p>
     <div class="stats">
-      <div class="stat"><div class="n">Fri Jul 31</div><div class="l">→ Fri Aug 7, 2026</div></div>
-      <div class="stat"><div class="n">3 nights</div><div class="l">Rapallo · Portofino Coast</div></div>
+      <div class="stat"><div class="n">Fri Jul 31</div><div class="l">→ Sun Aug 9, 2026</div></div>
+      <div class="stat"><div class="n">3 nights</div><div class="l">Santa Margherita Ligure</div></div>
       <div class="stat"><div class="n">3 nights</div><div class="l">Porto Cervo · Costa Smeralda</div></div>
-      <div class="stat"><div class="n">Cinque Terre</div><div class="l">a full day, locked in</div></div>
+      <div class="stat"><div class="n">+2 nights</div><div class="l">Milan · open end</div></div>
     </div>
   </div>
 </header>
@@ -217,33 +234,39 @@
 <!-- COMPARE -->
 <section><div class="wrap">
   <div class="compare">
-    <span class="eyebrow">How this version works</span>
-    <p>Same slow, spa-forward rhythm as Puglia and Sicily, across <b>two famous coasts</b>. You keep the <b>American round trip into and out of Rome</b>, then instead of a second flight you take a <b>scenic train down to the Riviera</b> — no extra airport on arrival. The only flight inside the trip is the one unavoidable island crossing, <b>Genoa → Olbia</b>, mid-trip.</p>
+    <span class="eyebrow">How this trip flows</span>
+    <p>A slow, spa-forward rhythm across <b>two famous coasts</b>. You fly Miami → <b>Madrid → Milan</b> on Air Europa, pick up a <b>rental car</b> at Malpensa and drive down to <b>Santa Margherita Ligure</b> for the Portofino coast and a Cinque Terre day. Then the one flight inside the trip — the unavoidable island hop, <b>Milan → Olbia</b> — drops you into the Costa Smeralda. You finish with an <b>open couple of days based around Milan</b> before the same Madrid connection home.</p>
   </div>
 </div></section>
 
-<!-- FLIGHT + TRAIN CHAIN -->
+<!-- FLIGHT + CAR CHAIN -->
 <section id="chain"><div class="wrap">
-  <div class="sec-head"><span class="eyebrow">The plan at a glance</span><h2 class="display">Flights &amp; train</h2>
-    <p class="sec-sub">Two transatlantic flights on American, one scenic train, one island hop, and one island return. Times are indicative from current schedules — confirm exact times when you book, ~6–8 weeks out.</p></div>
+  <div class="sec-head"><span class="eyebrow">The plan at a glance</span><h2 class="display">Flights &amp; car</h2>
+    <p class="sec-sub">Transatlantic round trip via Madrid on Air Europa, a short Madrid → Milan leg, a rental car down to the Riviera, one island hop to Sardinia, and the return via Milan. The Aug 7 island return and the Aug 7–9 plan are still open.</p></div>
   <div class="tt">
     <div class="r"><div class="day">Fri · Jul 31</div>
-      <div class="route">MIA → FCO <span>Miami to Rome · American AA052 · nonstop · Flagship Business (lie-flat) available</span></div>
-      <div class="time">19:10 → 11:20<small>+1 · ~10h</small></div></div>
+      <div class="route">MIA → MAD <span>Miami to Madrid · Air Europa UX98 · overnight · conf 9X8ZY8</span></div>
+      <div class="time">9:30 PM → 12:05 PM<small>+1 · ~8h35</small></div></div>
+    <div class="r"><div class="day">Sat · Aug 1</div>
+      <div class="route">MAD → MXP <span>Madrid to Milan Malpensa · Air Europa · connection</span></div>
+      <div class="time">3:10 PM → 5:15 PM<small>~2h05</small></div></div>
     <div class="r train"><div class="day">Sat · Aug 1</div>
-      <div class="route">Rome → Rapallo <span>by train · Leonardo Express to Termini, then Frecciarossa down the coast</span></div>
-      <div class="time">~4h<small>fastest 3h49</small></div></div>
+      <div class="route">MXP → Santa Margherita <span>rental car (pick up at Malpensa) · down to the Tigullio coast</span></div>
+      <div class="time">~2.5–3h<small>drive · evening</small></div></div>
     <div class="r sard"><div class="day">Tue · Aug 4</div>
-      <div class="route">GOA → OLB <span>Genoa to Olbia · Volotea (seasonal) · the one island hop</span></div>
-      <div class="time">~15:10 → 16:15<small>~1h05</small></div></div>
+      <div class="route">MXP → OLB <span>Milan Malpensa to Olbia · easyJet · the island hop (drop car at MXP)</span></div>
+      <div class="time">7:50 PM → 9:10 PM<small>~1h20</small></div></div>
     <div class="r sard"><div class="day">Fri · Aug 7</div>
-      <div class="route">OLB → FCO <span>Olbia to Rome · ITA / Volotea · morning</span></div>
-      <div class="time">~08:30 → 09:35<small>~1h</small></div></div>
-    <div class="r"><div class="day">Fri · Aug 7</div>
-      <div class="route">FCO → MIA <span>Rome to Miami · American AA053 · nonstop · same return ticket</span></div>
-      <div class="time">~14:30 → 19:55<small>same day ET · ~11h</small></div></div>
+      <div class="route">OLB → Milan <span>island return · late flight to make the most of the day</span></div>
+      <div class="time">to confirm<small>not yet booked</small></div></div>
+    <div class="r"><div class="day">Sun · Aug 9</div>
+      <div class="route">Milan → MAD <span>Milan to Madrid · Air Europa · return connection</span></div>
+      <div class="time">11:05 AM → 1:15 PM<small>~2h10</small></div></div>
+    <div class="r"><div class="day">Sun · Aug 9</div>
+      <div class="route">MAD → MIA <span>Madrid to Miami · Air Europa · same return ticket</span></div>
+      <div class="time">3:25 PM → 6:45 PM<small>same day ET</small></div></div>
   </div>
-  <p class="legend"><b>What changed:</b> the old Rome → Genoa flight is gone — you arrive Rome on American and <b>train</b> to the coast. The American MIA ⇄ FCO round trip is unchanged. Genoa → Olbia stays (it's the island crossing), and Olbia → Rome feeds the American flight home.</p>
+  <p class="legend"><b>Still open:</b> the <b>Olbia → Milan return on Aug 7</b> (leaving late to maximize the last Sardinia day), and the <b>Aug 7–9 plan</b> — either two nights in Milan or joining Grandma's onward boat. The Air Europa round trip (Madrid both ways) and the Aug 4 easyJet hop are set.</p>
 </div></section>
 
 <!-- DAY BY DAY -->
@@ -252,29 +275,29 @@
 
   <article class="day"><div class="rail"><div class="num">01</div><div class="tick">Fri · Jul 31</div></div>
     <div><div class="tag">Travel</div><h3>Depart Miami</h3>
-      <div class="meta">Fri · Jul 31 · overnight to Rome</div>
+      <div class="meta">Fri · Jul 31 · overnight to Madrid</div>
       <p class="intro">An easy start — nothing to do but get on the plane and sleep across the Atlantic.</p>
       <div class="irows">
-        <div class="irow"><div class="t">Evening</div><div class="d">Light dinner before the gate. American <b>AA052</b> MIA → Rome, ~7:10 PM. Grandma lie-flat in Flagship Business on the 777.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Light dinner before the gate. Air Europa <b>UX98</b> MIA → Madrid, <b>9:30 PM</b> (confirmation 9X8ZY8).</div></div>
         <div class="irow"><div class="t">Onboard</div><div class="d">Overnight flight. Aim to sleep — tomorrow ends on the Riviera.</div></div>
       </div>
     </div>
   </article>
 
   <article class="day"><div class="rail"><div class="num">02</div><div class="tick">Sat · Aug 1</div></div>
-    <div><div class="tag">Riviera</div><h3>Land in Rome → train to Rapallo</h3>
-      <div class="meta">Sat · Aug 1 · scenic rail, then settle</div>
-      <p class="intro">No second flight today — land in Rome and take the train up and over to the Ligurian coast, the last stretch running right along the sea.</p>
+    <div><div class="tag">Riviera</div><h3>Madrid → Milan → drive to Santa Margherita</h3>
+      <div class="meta">Sat · Aug 1 · connect, fly, then settle</div>
+      <p class="intro">Land Madrid mid-day, connect to Milan, pick up the rental car at Malpensa and drive down to the Ligurian coast — the last stretch running toward the sea.</p>
       <div class="figs">
-        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Rapallo-IMG_0436.JPG" alt="Rapallo seafront"><figcaption><b>Rapallo</b> — your base on the Gulf of Tigullio for three nights</figcaption></figure>
-        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/1280px-Portofino%2C_Italy_2025.jpg" alt="Portofino"><figcaption><b>Portofino</b> — a short boat ride away, for tomorrow</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Santa_Margherita_Ligure%2C_Italy.jpg" alt="Santa Margherita Ligure"><figcaption><b>Santa Margherita Ligure</b> — your base on the Gulf of Tigullio for three nights</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/1280px-Portofino%2C_Italy_2025.jpg" alt="Portofino"><figcaption><b>Portofino</b> — a short ride away, for tomorrow</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">Late AM</div><div class="d">Land Rome (AA052) ~11:20. Clear customs, collect bags.</div></div>
-        <div class="irow"><div class="t">Midday</div><div class="d"><b>Leonardo Express</b> FCO → Roma Termini (~32 min), then a <b>Frecciarossa / Frecciabianca</b> to Rapallo (~4 hrs, some direct, some change at Genova).</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Arrive Rapallo early evening, check in, dinner on the seafront. That's the whole assignment.</div></div>
+        <div class="irow"><div class="t">Midday</div><div class="d">Land Madrid (UX98) ~12:05. Clear the connection, then <b>MAD → Milan Malpensa</b>, 3:10 → 5:15 PM.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Pick up the <b>rental car</b> at Malpensa, drive ~2.5–3 hrs down to Santa Margherita.</div></div>
+        <div class="irow"><div class="t">Night</div><div class="d">Check in at the <b>Imperiale Palace Hotel</b>, dinner on the seafront. That's the whole assignment.</div></div>
       </div>
-      <div class="callout"><div class="pill"><b>Comfort for the ride:</b> book <b>Business</b> or <b>Executive</b> class on the Frecciarossa — bigger seats, and Executive adds station lounge access, Fast Track, and a meal served at your seat. A gentle way to spend the afternoon after the redeye.</div></div>
+      <div class="callout"><div class="pill"><b>Comfort for the drive:</b> it's a long day after a redeye and a connection — split the wheel if you can, and keep the arrival evening loose. The Imperiale has on-site parking, which makes the late arrival painless.</div></div>
     </div>
   </article>
 
@@ -287,15 +310,16 @@
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/BasilPesto.JPG" alt="Ligurian pesto"><figcaption><b>Pesto alla genovese</b> — Liguria's great non-fish specialty</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">9:30 AM</div><div class="d">Ferry from Rapallo to <b>Portofino</b> — the famous piazzetta, the harbour, an easy walk up to San Giorgio for the view.</div></div>
-        <div class="irow"><div class="t">Lunch</div><div class="d">Trofie al pesto on the harbour (non-fish is easy here — see the allergy note below).</div></div>
-        <div class="irow"><div class="t">Afternoon</div><div class="d">Stop in <b>Santa Margherita</b> on the way back, then the hotel pool and spa during peak heat.</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Aperitivo on the Rapallo seafront, then dinner.</div></div>
+        <div class="irow"><div class="t">9:30 AM</div><div class="d">Ferry from Santa Margherita to <b>Portofino</b> — the famous piazzetta, the harbour, an easy walk up to San Giorgio for the view.</div></div>
+        <div class="irow"><div class="t">Lunch</div><div class="d">Harbour-front at <b>Lo Stella</b> — pansoti in walnut sauce, mandilli al pesto (the broadest fish-free menu in town).</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Back to <b>Santa Margherita</b>, then the hotel pool and spa during peak heat.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Dinner at <b>Oca Bianca</b> — the town's meat house, the safest and best-wine dinner (closed Mon, so tonight).</div></div>
       </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Lunch <b>Lo Stella</b> (Portofino) · Dinner <b>Oca Bianca</b> (Santa Margherita). See the Dining section for the full picks.</div></div>
       <div class="book"><div class="bt">Bookable experiences</div><ul>
-        <li><span>Rapallo–Portofino ferry (Tigullio line)</span><span>from $10</span></li>
-        <li><span>Private boat tour of the headland &amp; San Fruttuoso abbey</span><span>from $70</span></li>
-        <li><span>Pesto-making class in Santa Margherita</span><span>from $55</span></li>
+        <li><span>Santa Margherita → Portofino ferry (Tigullio line)</span><span>€12 / €20 rt</span></li>
+        <li><span>Private boat tour — headland &amp; San Fruttuoso abbey</span><span>from ~$100</span></li>
+        <li><span>Pesto-making class (naturally fish-free)</span><span>from ~$55</span></li>
       </ul></div>
     </div>
   </article>
@@ -303,39 +327,42 @@
   <article class="day"><div class="rail"><div class="num">04</div><div class="tick">Mon · Aug 3</div></div>
     <div><div class="tag">Riviera · the must-see</div><h3>Cinque Terre</h3>
       <div class="meta">Mon · Aug 3 · the five villages, the easy way</div>
-      <p class="intro">The day you came for. Five pastel villages stacked above the sea — done by train and boat rather than the cliff trails, with two villages rather than all five.</p>
+      <p class="intro">The day you came for. Pastel villages stacked above the sea — done by train and boat rather than the cliff trails, with two villages rather than all five.</p>
       <div class="figs">
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vernazza_and_the_sea%2C_Cinque_Terre%2C_Italy.jpg/1280px-Vernazza_and_the_sea%2C_Cinque_Terre%2C_Italy.jpg" alt="Vernazza"><figcaption><b>Vernazza</b> — the most photogenic of the five</figcaption></figure>
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg/1280px-Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg" alt="Manarola"><figcaption><b>Manarola</b> — the classic viewpoint</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">Morning</div><div class="d">Train from Santa Margherita / Rapallo (~1 hr) to <b>Monterosso</b> — the flattest village, and the one with a real beach.</div></div>
-        <div class="irow"><div class="t">Midday</div><div class="d">Hop one stop to <b>Vernazza</b> for the harbour and lunch. Minutes between villages; no hiking required.</div></div>
+        <div class="irow"><div class="t">Morning</div><div class="d">Train from Santa Margherita (~1 hr) to <b>Monterosso</b> — the flattest village, and the one with a real beach. (Leave the car — the train is far easier here.)</div></div>
+        <div class="irow"><div class="t">Lunch</div><div class="d">Hop one stop to <b>Vernazza</b> — harbour-front lunch at <b>Il Gambero Rosso</b>. Minutes between villages; no hiking required.</div></div>
         <div class="irow"><div class="t">Afternoon</div><div class="d">Optional scenic <b>ferry</b> back past Manarola and Riomaggiore — the coastline from the water.</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Back to Rapallo for a quiet dinner.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Back to Santa Margherita — dinner at <b>Angolo 48</b> (Oca Bianca is closed Mondays).</div></div>
       </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Lunch <b>Il Gambero Rosso</b> (Vernazza) or <b>La Cantina di Miky</b> (Monterosso) · Dinner <b>Angolo 48</b> (Santa Margherita).</div></div>
       <div class="callout"><div class="pill"><b>Pacing for two:</b> the villages are steep and packed in August. Early start, flat Monterosso plus Vernazza, and the ferry instead of the trails keeps it gentle.</div></div>
       <div class="book"><div class="bt">Bookable experiences</div><ul>
-        <li><span>Cinque Terre train + ferry day pass</span><span>from $45</span></li>
-        <li><span>Small-group boat tour of the five villages from Levanto</span><span>from $60</span></li>
-        <li><span>Private driver + guide day from Rapallo</span><span>from $90</span></li>
+        <li><span>Cinque Terre Card · train pass (peak Aug, Band C)</span><span>~€35/day</span></li>
+        <li><span>Cinque Terre ferry · all-villages day pass</span><span>€42</span></li>
+        <li><span>Private driver + guide day from Santa Margherita</span><span>from ~$90</span></li>
       </ul></div>
     </div>
   </article>
 
   <article class="day sard"><div class="rail"><div class="num">05</div><div class="tick">Tue · Aug 4</div></div>
-    <div><div class="tag">→ Sardinia</div><h3>Hop to the Costa Smeralda</h3>
-      <div class="meta">Tue · Aug 4 · Genoa → Olbia → Porto Cervo</div>
-      <p class="intro">The coast changes character today — from Ligurian pastel to Sardinian granite and emerald water, your base for the back half.</p>
+    <div><div class="tag">→ Sardinia</div><h3>Drive to Milan, hop to the Costa Smeralda</h3>
+      <div class="meta">Tue · Aug 4 · Santa Margherita → MXP → Olbia → Porto Cervo</div>
+      <p class="intro">The coast changes character today — a relaxed final Tigullio morning, then back up to Milan to drop the car and fly south to Sardinian granite and emerald water.</p>
       <div class="figs">
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda"><figcaption><b>Costa Smeralda</b> — emerald water and white-granite coves</figcaption></figure>
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo"><figcaption><b>Porto Cervo</b> — the marina village and its piazzetta</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">Morning</div><div class="d">Train Rapallo → Genova (~35 min) or a private car straight to Genoa airport (~40 min).</div></div>
-        <div class="irow"><div class="t">Early PM</div><div class="d">Genoa → <b>Olbia</b> (~1h05). Private transfer ~40 min to <b>Porto Cervo</b>. Check in, pool, beach path or spa.</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Stroll the <b>Porto Cervo</b> piazzetta and marina at golden hour, then dinner.</div></div>
+        <div class="irow"><div class="t">Morning</div><div class="d">Relaxed morning and early lunch in the Santa Margherita area, then leave ~1:30–2 PM.</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d">Drive Santa Margherita → <b>Milan Malpensa</b> (~2.5–3 hrs), drop the rental car at the airport.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d"><b>easyJet MXP → Olbia</b>, 7:50 → 9:10 PM. Private transfer ~40 min to <b>Porto Cervo</b>.</div></div>
+        <div class="irow"><div class="t">Night</div><div class="d">Late check-in (~10 PM) at the Grand Hotel — an easy dinner at the hotel.</div></div>
       </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Early lunch in the Tigullio · easy <b>hotel dinner</b> in Porto Cervo on the late arrival.</div></div>
       <div class="callout"><div class="pill"><b>Base · Grand Hotel in Porto Cervo</b> — on the bay above <b>Cala Granu</b> beach, with a direct path down to reserved loungers, a panoramic pool and a small spa. Gentle and beach-easy.</div></div>
     </div>
   </article>
@@ -348,15 +375,16 @@
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda cove"><figcaption><b>The Costa Smeralda coves</b> — Cala Granu at the hotel, or the famous beaches a short drive south</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">Morning</div><div class="d">Beach time — the hotel's <b>Cala Granu</b>, or a short drive to <b>Spiaggia del Principe</b> and <b>Capriccioli</b>.</div></div>
+        <div class="irow"><div class="t">Morning</div><div class="d">Beach time — the hotel's <b>Cala Granu</b>, or a short drive to <b>Capriccioli</b> (gentler access than Spiaggia del Principe).</div></div>
         <div class="irow"><div class="t">Lunch</div><div class="d">A beach-club lunch — Sardinian, not fish-bound (roast meats, culurgiones, pecorino).</div></div>
         <div class="irow"><div class="t">Afternoon</div><div class="d">Spa and pool through peak heat.</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Aperitivo in Porto Cervo, then dinner.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">Dinner at <b>Spinnaker</b> — lively, classic, the easy settle-in night (wood-fired pizza, meats, seadas).</div></div>
       </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Beach-club lunch · Dinner <b>Spinnaker</b> (Liscia di Vacca).</div></div>
       <div class="book"><div class="bt">Bookable experiences</div><ul>
-        <li><span>Private driver — Costa Smeralda beaches half day</span><span>from $80</span></li>
-        <li><span>Spiaggia del Principe &amp; Capriccioli sun-bed reservations</span><span>from $30</span></li>
-        <li><span>Porto Cervo walking &amp; aperitivo evening</span><span>from $35</span></li>
+        <li><span>Private driver — Costa Smeralda beaches half day</span><span>from ~$80</span></li>
+        <li><span>Beach-club day · Nikki Beach or Phi/Nammos (sunbeds)</span><span>verify</span></li>
+        <li><span>Vigne Surrau winery tasting (Arzachena)</span><span>€45–80</span></li>
       </ul></div>
     </div>
   </article>
@@ -369,53 +397,112 @@
         <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/La_Maddalena_-_Il_porto_%2802%29.JPG/1280px-La_Maddalena_-_Il_porto_%2802%29.JPG" alt="La Maddalena"><figcaption><b>La Maddalena</b> — a protected archipelago of pink-tinged sand and turquoise shallows</figcaption></figure>
       </div>
       <div class="irows">
-        <div class="irow"><div class="t">Morning</div><div class="d">Board at Cannigione or Palau for a <b>La Maddalena</b> cruise — Spargi, Budelli's pink beach, the Caprera shallows.</div></div>
+        <div class="irow"><div class="t">Morning</div><div class="d">Board near Porto Cervo / Cannigione / Palau for a <b>La Maddalena</b> cruise — Spargi, Budelli's pink beach, the Caprera shallows. A private skippered gozzo is gentlest (no swim-to-shore).</div></div>
         <div class="irow"><div class="t">Onboard</div><div class="d">Shaded deck, calm anchorages, swim stops. Grandma can stay aboard and take in the islands.</div></div>
         <div class="irow"><div class="t">Afternoon</div><div class="d">Back to the spa, or a last dip at the hotel beach.</div></div>
-        <div class="irow"><div class="t">Evening</div><div class="d">Last Sardinian dinner in Porto Cervo.</div></div>
+        <div class="irow"><div class="t">Evening</div><div class="d">The Sardinian feast — <b>Antica Gallura</b> or <b>Agriturismo La Colti</b> for porceddu (fully fish-free, worth the short drive).</div></div>
       </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Lunch onboard · Dinner <b>Antica Gallura</b> (Arzachena) or <b>La Colti</b> (Cannigione) — porceddu.</div></div>
       <div class="book"><div class="bt">Bookable experiences</div><ul>
-        <li><span>La Maddalena small-group day cruise</span><span>from $55</span></li>
-        <li><span>Private gozzo / gulet charter (half or full day)</span><span>from $120</span></li>
-        <li><span>Caprera &amp; Garibaldi house add-on</span><span>from $15</span></li>
+        <li><span>Private gozzo / gulet charter (half or full day)</span><span>~€400–500/boat</span></li>
+        <li><span>La Maddalena small-group VIP-deck cruise</span><span>from ~$63 pp</span></li>
+        <li><span>Sardinian cooking class (Cesarine, non-seafood)</span><span>€133–199</span></li>
       </ul></div>
     </div>
   </article>
 
   <article class="day sard"><div class="rail"><div class="num">08</div><div class="tick">Fri · Aug 7</div></div>
-    <div><div class="tag">Home</div><h3>Olbia → Rome → Miami</h3>
-      <div class="meta">Fri · Aug 7 · all the way home, same day</div>
+    <div><div class="tag">Sardinia → Milan</div><h3>Last Sardinia day → late flight</h3>
+      <div class="meta">Fri · Aug 7 · maximize the day, fly out late</div>
+      <p class="intro">One more full Sardinian day before a late flight back toward Milan — the beach, the spa, and a last great dinner.</p>
       <div class="irows">
-        <div class="irow"><div class="t">Early</div><div class="d">Leave the hotel ~06:45, car to Olbia airport (~40 min), <b>OLB → Rome</b> ~08:30.</div></div>
-        <div class="irow"><div class="t">Midday</div><div class="d">Lunch / lounge at Fiumicino, then <b>American AA053</b> Rome → Miami (~14:30).</div></div>
-        <div class="irow"><div class="t">Afternoon</div><div class="d">Land Miami the same day (~19:55 ET).</div></div>
+        <div class="irow"><div class="t">Day</div><div class="d">Beach and spa, or a last cove drive. Check out and store bags; keep it gentle.</div></div>
+        <div class="irow"><div class="t">Dinner</div><div class="d">A Porto Cervo finale — <b>Confusion</b> (1-star Michelin, pre-built fish-free) or <b>Novikov</b> for the glamour and the Piazzetta scene.</div></div>
+        <div class="irow"><div class="t">Late</div><div class="d"><b>Olbia → Milan</b> on a late flight (to confirm), then the open Milan stretch begins.</div></div>
       </div>
-      <div class="callout"><div class="pill"><b>Heads-up on the return:</b> the Olbia → Rome flight is a <b>separate ticket</b> from the American transatlantic, so leave a generous buffer (this plan gives ~5 hrs in Rome). See the logistics flag below for the zero-risk overnight option.</div></div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> Dinner <b>Confusion</b> or <b>Novikov</b> (Porto Cervo) before the late flight.</div></div>
+      <div class="flag"><h3>Still to lock in</h3><p>The <b>Olbia → Milan return</b> flight isn't booked yet — choose a late departure to keep the full Sardinia day. And decide the <b>Aug 7–9 plan</b>: two nights in Milan, or joining Grandma's onward boat.</p></div>
+    </div>
+  </article>
+
+  <article class="day"><div class="rail"><div class="num">09</div><div class="tick">Aug 7 – 9</div></div>
+    <div><div class="tag">Open · solo</div><h3>Milan — the open end</h3>
+      <div class="meta">Fri Aug 7 – Sun Aug 9 · undecided</div>
+      <p class="intro">Two nights still to be shaped — most likely Milan, solo, with classic, glamorous dinners; or onward with Grandma by boat. Milan empties out in August, so the picks below are chosen to be open in early August.</p>
+      <div class="irows">
+        <div class="irow"><div class="t">Evenings</div><div class="d"><b>Casa Cipriani Milano</b> (your Cipriani sweet spot — the original Carpaccio), <b>Da Giacomo Arengario</b> (Duomo-view glamour), with <b>Sant'Ambroeus</b>, <b>Caruso Nuovo</b> and <b>Osteria Brunello</b> as reliably-open backups.</div></div>
+        <div class="irow"><div class="t">Days</div><div class="d">Duomo, the Quadrilatero, an easy city pace — or the alternative onward plan with Grandma.</div></div>
+      </div>
+      <div class="callout"><div class="pill dine"><b>Dining:</b> See the Milan picks in the Dining section — all checked for early-August opening.</div></div>
+    </div>
+  </article>
+
+  <article class="day"><div class="rail"><div class="num">10</div><div class="tick">Sun · Aug 9</div></div>
+    <div><div class="tag">Home</div><h3>Milan → Madrid → Miami</h3>
+      <div class="meta">Sun · Aug 9 · all the way home, same day</div>
+      <div class="irows">
+        <div class="irow"><div class="t">Morning</div><div class="d"><b>Milan → Madrid</b> on Air Europa, 11:05 AM → 1:15 PM.</div></div>
+        <div class="irow"><div class="t">Afternoon</div><div class="d"><b>Madrid → Miami</b>, 3:25 PM → 6:45 PM — land the same day.</div></div>
+      </div>
+      <div class="callout"><div class="pill"><b>Connection buffer:</b> ~2 hrs in Madrid between the two legs — comfortable on one Air Europa ticket. Reconfirm the Milan departure airport matches your Aug 7 island-return arrival.</div></div>
     </div>
   </article>
 </div></section>
 
+<!-- DINING -->
+<section id="dining"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">The table</span><h2 class="display">Dining</h2>
+    <p class="sec-sub">Classic, lively, elegant-not-pretentious — built around the fish &amp; shellfish allergy, so it leans on the meat houses, pasta kitchens and agriturismi that are both the safest and the most on-taste. Flag the allergy at booking and on arrival, every time.</p></div>
+  <div class="dine-grid">
+    <div class="dcard"><div class="place">Liguria · Aug 2–4</div><h3>Riviera picks</h3>
+      <ul>
+        <li><span class="tagx">Anchor dinner</span><b>Oca Bianca</b> Santa Margherita meat house — safest + best wine. Closed Mon → Sun Aug 2.</li>
+        <li><span class="tagx">Portofino</span><b>Lo Stella</b> harbour-front, broadest fish-free menu &amp; best value; <b>DaV Mare</b> for Michelin polish.</li>
+        <li><span class="tagx">Lively town</span><b>Angolo 48</b> patio; <b>Trattoria da Pezzi</b> for authentic Ligurian + best allergy care.</li>
+        <li><span class="tagx">Cinque Terre lunch</span><b>Il Gambero Rosso</b> (Vernazza harbour) or <b>La Cantina di Miky</b> (Monterosso beach).</li>
+      </ul>
+    </div>
+    <div class="dcard em"><div class="place">Sardinia · Aug 4–7</div><h3>Costa Smeralda picks</h3>
+      <ul>
+        <li><span class="tagx">Safest + best value</span><b>Antica Gallura</b> (Arzachena) — porceddu feast, allergy a non-issue.</li>
+        <li><span class="tagx">Farm experience</span><b>Agriturismo La Colti</b> — open-grill suckling pig, book a day ahead.</li>
+        <li><span class="tagx">Lively classic</span><b>Spinnaker</b> — wood-fired pizza &amp; meats, easy settle-in night.</li>
+        <li><span class="tagx">Finale</span><b>Confusion</b> (1-star Michelin, pre-built fish-free) or <b>Novikov</b> for the Piazzetta glamour.</li>
+      </ul>
+    </div>
+    <div class="dcard"><div class="place">Milan · Aug 7–9 · solo</div><h3>City picks</h3>
+      <ul>
+        <li><span class="tagx">The sweet spot</span><b>Casa Cipriani Milano</b> — the original Carpaccio &amp; a Bellini; open year-round.</li>
+        <li><span class="tagx">Glamour + view</span><b>Da Giacomo Arengario</b> — over Piazza del Duomo.</li>
+        <li><span class="tagx">Reliably open</span><b>Sant'Ambroeus</b> &amp; <b>Caruso Nuovo</b> (Grand Hotel et de Milan) — classic Milanese.</li>
+        <li><span class="tagx">Best cotoletta</span><b>Osteria Brunello</b> — warm, lively, easy for solo.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note"><b>Allergy phrase:</b> <i>"Grave allergia a pesce e crostacei"</i> — state it at the reservation, not just at the table. Skip fritto misto and shared antipasti platters (cross-contact). In Liguria watch for anchovies (acciughe) in sauces. The meat houses and agriturismi (Oca Bianca, Antica Gallura, La Colti) are inherently safest; the full concierge guide has signature dishes, reservation platforms and rankings for each.</div>
+</div></section>
+
 <!-- HOTELS -->
 <section id="hotels"><div class="wrap">
-  <div class="sec-head"><span class="eyebrow">Where to stay</span><h2 class="display">Hotel shortlist</h2>
-    <p class="sec-sub">Rates are indicative August bands for two adults, not live quotes — confirm for your dates before booking. Costa Smeralda runs hot in August.</p></div>
+  <div class="sec-head"><span class="eyebrow">Where to stay</span><h2 class="display">Hotels</h2>
+    <p class="sec-sub">Two booked bases, plus the open Milan end still to decide. Rates are indicative August bands for two, not live quotes.</p></div>
 
   <div class="hgroup">
-    <h3>Rapallo / Portofino Coast — 3 nights · Aug 1–4</h3>
-    <div class="sub">Belle Époque grandeur on the Tigullio gulf, walkable to the boats and the Cinque Terre train.</div>
+    <h3>Santa Margherita Ligure — 3 nights · Aug 1–4</h3>
+    <div class="sub">Belle-époque grandeur on the Tigullio gulf, on the seafront toward Portofino.</div>
     <div class="hotels">
-      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Rapallo-IMG_0436.JPG" alt="Rapallo bay"></div>
-        <div class="hc"><span class="badge gold">The base pick</span><div class="name">Excelsior Palace Portofino Coast</div>
-          <div class="meta">5★ · Rapallo · the only 5-star on the Portofino Coast</div>
-          <div class="desc">A 1901 grande dame between the bays of Rapallo and Portofino, with <b>two sea-facing infinity pools</b>, a beach club and a spa. Walkable to the train station for the Cinque Terre and Portofino days.</div>
-          <div class="foot"><span class="rate">~$770–1,100/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Excelsior+Palace+Portofino+Coast+Rapallo&checkin=2026-08-01&checkout=2026-08-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+      <div class="hotel pick"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Santa_Margherita_Ligure%2C_Italy.jpg" alt="Santa Margherita Ligure"></div>
+        <div class="hc"><span class="badge em">Booked ✓</span><div class="name">Imperiale Palace Hotel</div>
+          <div class="meta">5★ · Via Pagana 19 · Santa Margherita Ligure</div>
+          <div class="desc">A grand 1889 seafront palace with a <b>private beach</b>, <b>two pools</b> (incl. a warm-seawater pool) set in a historic park, and two restaurants — the waterfront "Imperiale a Mare" grill and a sea-view veranda. ~10–15 min walk along the front to the centre, the ferry and the train.</div>
+          <div class="foot"><span class="rate">Aug 1–4 · 3 nts</span><a class="cta" href="https://www.imperialepalacehotel.it/en/index" target="_blank" rel="noopener">Hotel site →</a></div>
         </div>
       </div>
-      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Santa_Margherita_Ligure%2C_Italy.jpg" alt="Santa Margherita"></div>
-        <div class="hc"><span class="badge">Like VISTA ✓ · LHW</span><div class="name">Grand Hotel Miramare</div>
-          <div class="meta">5★ · Santa Margherita Ligure · Leading Hotels of the World</div>
-          <div class="desc">A refined seafront palazzo in <b>Santa Margherita</b>, the same Leading Hotels family as VISTA Ostuni, with a heated saltwater pool and gardens over the bay.</div>
-          <div class="foot"><span class="rate">~$1,300–1,900/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+Miramare+Santa+Margherita+Ligure&checkin=2026-08-01&checkout=2026-08-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Rapallo-IMG_0436.JPG" alt="Tigullio gulf"></div>
+        <div class="hc"><span class="badge">Getting around</span><div class="name">Rental car · base notes</div>
+          <div class="meta">Picked up &amp; dropped at Milan Malpensa</div>
+          <div class="desc">The car covers the Tigullio drives and the Aug 4 run back to Milan. <b>Cinque Terre is best by train + ferry</b> (skip the car that day), and central Santa Margherita parking is tight — use the Imperiale's parking. Portofino is an easy ferry or short drive.</div>
+          <div class="foot"><span class="rate">MXP ⇄ MXP</span><span class="cta">no one-way fee</span></div>
         </div>
       </div>
     </div>
@@ -423,27 +510,20 @@
 
   <div class="hgroup" style="margin-top:32px">
     <h3>Porto Cervo / Costa Smeralda — 3 nights · Aug 4–7</h3>
-    <div class="sub">Your chosen base, plus two more coastal options nearby.</div>
+    <div class="sub">The Sardinian base above Cala Granu beach.</div>
     <div class="hotels">
       <div class="hotel pick"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo bay"></div>
-        <div class="hc"><span class="badge em">Your pick ✓</span><div class="name">Grand Hotel in Porto Cervo</div>
-          <div class="meta">4★ · Porto Cervo Bay · above Cala Granu beach</div>
-          <div class="desc">On the bay near <b>Cala Granu</b>, with a panoramic pool, a small spa and a <b>direct path to a private beach</b> with reserved loungers. Sea-view terraces, ~40 min from Olbia. The gentle, beach-easy choice.</div>
-          <div class="foot"><span class="rate">~$650–1,100/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+in+Porto+Cervo&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+        <div class="hc"><span class="badge em">Booked ✓</span><div class="name">Grand Hotel in Porto Cervo</div>
+          <div class="meta">Porto Cervo Bay · above Cala Granu beach</div>
+          <div class="desc">On the bay near <b>Cala Granu</b>, with a panoramic pool, a small spa and a <b>direct path to a private beach</b> with reserved loungers. Sea-view terraces, ~40 min from Olbia airport. The gentle, beach-easy choice.</div>
+          <div class="foot"><span class="rate">Aug 4–7 · 3 nts</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+in+Porto+Cervo&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View →</a></div>
         </div>
       </div>
-      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Porto_Cervo1.jpg" alt="Porto Cervo"></div>
-        <div class="hc"><span class="badge">Alt · 5★ in the village</span><div class="name">Colonna Resort</div>
-          <div class="meta">5★ · Porto Cervo · 600 sqm spa, park setting</div>
-          <div class="desc">The largest 5-star right by <b>Porto Cervo</b>, set in a 60,000 sqm park with a big spa and pools, shuttle to the beach. The most resort-style stay of the three, a short hop from the marina.</div>
-          <div class="foot"><span class="rate">~$800–1,700/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Colonna+Resort+Porto+Cervo&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
-        </div>
-      </div>
-      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Costa_Smeralda_1.jpg" alt="Costa Smeralda coast"></div>
-        <div class="hc"><span class="badge">Alt · La Maddalena views</span><div class="name">Grand Hotel Poltu Quatu</div>
-          <div class="meta">5★ · a fjord-like cove near Porto Cervo &amp; Baja Sardinia</div>
-          <div class="desc">A glamorous 5-star tucked in a granite inlet <b>overlooking the La Maddalena islands</b>, with an outdoor pool, spa and a private beach by shuttle. Strong value for the coast in August.</div>
-          <div class="foot"><span class="rate">~$600–1,400/nt</span><a class="cta" href="https://www.booking.com/searchresults.html?ss=Grand+Hotel+Poltu+Quatu&checkin=2026-08-04&checkout=2026-08-07&group_adults=2&no_rooms=1" target="_blank" rel="noopener">View &amp; book →</a></div>
+      <div class="hotel"><div class="hi"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/1280px-Portofino%2C_Italy_2025.jpg" alt="Milan open end"></div>
+        <div class="hc"><span class="badge gold">To decide</span><div class="name">Milan · Aug 7–9</div>
+          <div class="meta">2 nights · open end</div>
+          <div class="desc">Still undecided — two nights in <b>Milan</b> solo (near the centre for the dining picks and an easy Aug 9 departure), or onward with Grandma by boat. Pick once the Aug 7 island-return flight is set.</div>
+          <div class="foot"><span class="rate">TBD</span><span class="cta">awaiting decision</span></div>
         </div>
       </div>
     </div>
@@ -453,59 +533,40 @@
 <!-- LOGISTICS -->
 <section id="logistics"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">Logistics</span><h2 class="display">Getting there, and around</h2>
-    <p class="sec-sub">Connections, transfers, what to book in what order, live fares, and the few things to verify.</p></div>
+    <p class="sec-sub">Connections, transfers, what to book in what order, and the few things still to verify.</p></div>
 
   <h3 class="display" style="font-size:21px;margin:6px 0 14px">The connections that matter</h3>
   <div class="conn">
-    <div class="cx"><div class="h">Arrival in Rome</div><div class="b">No flight to connect — land FCO <b>11:20</b>, Leonardo Express to Termini, train north. Relaxed and on your own clock.</div><div class="buf">No tight link</div></div>
-    <div class="cx"><div class="h">Genoa → Olbia</div><div class="b">Its own travel day (Tue Aug 4). Morning in Rapallo, ~40 min to Genoa airport, midday flight south. <b>Nothing to miss.</b></div><div class="buf">Standalone day</div></div>
-    <div class="cx"><div class="h">Return via Rome</div><div class="b">OLB → FCO lands <b>~09:35</b>; American FCO → MIA departs <b>~14:30</b>. Separate tickets, so the <b>~5h buffer</b> is the safety margin.</div><div class="buf">~5h buffer</div></div>
+    <div class="cx"><div class="h">Arrival via Madrid</div><div class="b">Land Madrid <b>~12:05</b>, connect to Milan <b>3:10 → 5:15 PM</b>, then drive down. One ticket, Air Europa both legs.</div><div class="buf">One ticket</div></div>
+    <div class="cx"><div class="h">Milan → Olbia</div><div class="b">Its own travel day (Tue Aug 4). Final Tigullio morning, drive to Malpensa, drop the car, <b>easyJet 7:50 PM</b>. Nothing to miss.</div><div class="buf">Standalone day</div></div>
+    <div class="cx"><div class="h">Return via Madrid</div><div class="b">Aug 9 Milan → Madrid <b>11:05 → 1:15</b>, then Madrid → Miami <b>3:25 → 6:45</b>. ~2h connection in Madrid.</div><div class="buf">~2h buffer</div></div>
   </div>
 
-  <h3 class="display" style="font-size:21px;margin:30px 0 14px">Ground transfers</h3>
+  <h3 class="display" style="font-size:21px;margin:30px 0 14px">Ground &amp; transfers</h3>
   <div class="dl">
-    <div class="drow"><div class="k">FCO airport → Roma Termini</div><div class="v"><b>Leonardo Express ~32 min</b> (every 15–30 min), or a private car ~45 min. Sat Aug 1.</div></div>
-    <div class="drow"><div class="k">Roma Termini → Rapallo</div><div class="v"><b>Frecciarossa / Frecciabianca ~4 hrs</b> (fastest 3h49; ~18/day, some direct, some change at Genova). Book Business or Executive. Sat Aug 1.</div></div>
-    <div class="drow"><div class="k">Rapallo ⇄ Portofino</div><div class="v">Local <b>ferry ~30 min</b> or car ~25 min. Sun Aug 2.</div></div>
-    <div class="drow"><div class="k">Rapallo → Cinque Terre</div><div class="v"><b>Train ~1 hr</b> to Monterosso; Cinque Terre Express between villages; ferry back. Mon Aug 3.</div></div>
-    <div class="drow"><div class="k">Rapallo → Genoa airport</div><div class="v"><b>~40 min</b> private car (or train Rapallo→Genova ~35 min + airport shuttle). Tue Aug 4.</div></div>
+    <div class="drow"><div class="k">Milan Malpensa → Santa Margherita</div><div class="v"><b>Rental car ~2.5–3 hrs</b>. Pick up at MXP. Sat Aug 1.</div></div>
+    <div class="drow"><div class="k">Santa Margherita ⇄ Portofino</div><div class="v">Local <b>ferry ~30 min</b> or car ~25 min. Sun Aug 2.</div></div>
+    <div class="drow"><div class="k">Santa Margherita → Cinque Terre</div><div class="v"><b>Train ~1 hr</b> to Monterosso; Cinque Terre Express between villages; ferry back. Leave the car. Mon Aug 3.</div></div>
+    <div class="drow"><div class="k">Santa Margherita → Milan Malpensa</div><div class="v"><b>Rental car ~2.5–3 hrs</b>; drop at MXP. Leave ~1:30–2 PM. Tue Aug 4.</div></div>
     <div class="drow"><div class="k">Olbia airport → Porto Cervo</div><div class="v"><b>~40 min</b> private car (~30 km). Hotel can arrange. Tue Aug 4.</div></div>
-    <div class="drow"><div class="k">Porto Cervo → Olbia airport</div><div class="v"><b>~40 min</b> private car. Fri Aug 7 — leave ~06:45 for the ~08:30 flight.</div></div>
+    <div class="drow"><div class="k">Porto Cervo → Olbia airport</div><div class="v"><b>~40 min</b> private car for the late Aug 7 flight.</div></div>
   </div>
 
-  <h3 class="display" style="font-size:21px;margin:30px 0 14px">What to book, in what order</h3>
+  <h3 class="display" style="font-size:21px;margin:30px 0 14px">What to book next</h3>
   <ol class="steps">
-    <li><div><b>American round trip, Rome.</b><div class="t">Book <b>MIA ⇄ FCO on American</b> (AA052 out Jul 31 / AA053 home Aug 7). Choose <b>Flagship Business</b> for Grandma's lie-flat on the 777 — this is the leg that matters.</div></div></li>
-    <li><div><b>The train to Rapallo.</b><div class="t">Roma Termini → Rapallo on Trenitalia (Frecciarossa/Frecciabianca). Book a few weeks out; reserve Business or Executive seats. Plus the Leonardo Express FCO→Termini.</div></div></li>
-    <li><div><b>The two island flights.</b><div class="t">Genoa → Olbia on <b>Volotea</b> (confirm Tue Aug 4), and Olbia → Rome on ITA/Volotea for the morning of Aug 7 — both economy, separate from the American ticket.</div></div></li>
-    <li><div><b>Transfers &amp; experiences.</b><div class="t">Private cars (Rapallo→Genoa, Olbia→Porto Cervo, Porto Cervo→Olbia), the Portofino ferry, Cinque Terre passes, and the La Maddalena boat. Reserve dinners — peak August.</div></div></li>
+    <li><div><b>The Olbia → Milan return (Aug 7).</b><div class="t">Book a <b>late departure</b> to keep the full Sardinia day. Confirm which Milan airport so it lines up with the Aug 9 Milan → Madrid leg.</div></div></li>
+    <li><div><b>The Aug 7–9 stay.</b><div class="t">Decide Milan solo vs. Grandma's boat, then book the two nights (and the Milan dinners — they fill in early August).</div></div></li>
+    <li><div><b>Rental car, MXP ⇄ MXP.</b><div class="t">Same pick-up and drop-off at Malpensa — no one-way fee. Reserve an automatic if preferred; confirm cross-border isn't needed.</div></div></li>
+    <li><div><b>Experiences &amp; dinners.</b><div class="t">Portofino ferry, Cinque Terre passes, the La Maddalena boat, beach-club sunbeds, and every dinner — reserve well ahead for peak August.</div></div></li>
   </ol>
 
-  <h3 class="display" style="font-size:21px;margin:30px 0 14px">Live fares &amp; booking links</h3>
-  <p class="sec-sub" style="margin-bottom:16px">Indicative current levels per person for peak early-August. Prices move constantly and can't be locked here — the links open each search with your dates and cabin set, where you'll see the real bookable fare.</p>
-  <div class="dl">
-    <div class="drow"><div class="k">Miami ⇄ Rome · American</div><div class="v">Economy <b>~$1,100–1,500</b> RT · <b style="color:var(--emerald-deep)">Flagship Business (lie-flat) ~$3,500–6,000</b> RT. Grandma's leg.</div></div>
-    <div class="drow"><div class="k">Rome → Rapallo · Trenitalia</div><div class="v">Business <b>~€55–95</b> · Executive <b>~€120–180</b> · plus Leonardo Express ~€14.</div></div>
-    <div class="drow"><div class="k">Genoa → Olbia · Volotea</div><div class="v">Economy <b>~$45–110</b> one-way. All-economy carrier.</div></div>
-    <div class="drow"><div class="k">Olbia → Rome · ITA / Volotea</div><div class="v">Economy <b>~$40–120</b> one-way.</div></div>
-  </div>
-  <div class="btns">
-    <a class="p" href="https://www.aa.com/booking/flights/choose-flights" target="_blank" rel="noopener">Book American · Business →</a>
-    <a class="g" href="https://www.kayak.com/flights/MIA-FCO/2026-07-31/2026-08-07/business?sort=price_a" target="_blank" rel="noopener">Live business fare · Miami ⇄ Rome →</a>
-    <a class="o" href="https://www.thetrainline.com/en/train-times/rome-to-rapallo" target="_blank" rel="noopener">Train · Rome → Rapallo →</a>
-    <a class="o" href="https://www.kayak.com/flights/GOA-OLB/2026-08-04" target="_blank" rel="noopener">Hop · Genoa → Olbia →</a>
-    <a class="o" href="https://www.kayak.com/flights/OLB-FCO/2026-08-07" target="_blank" rel="noopener">Island return · Olbia → Rome →</a>
-    <a class="o" href="https://www.google.com/travel/flights" target="_blank" rel="noopener">Compare on Google Flights →</a>
-  </div>
-  <p class="legend" style="margin-top:14px">The Kayak link carries your dates and the Business cabin in the URL; filter to American for the round trip that matches your transatlantic.</p>
-
   <h3 class="display" style="font-size:21px;margin:32px 0 12px">Contingencies &amp; flags</h3>
-  <div class="flag"><h3>Confirm the Tuesday Genoa → Olbia flight</h3>
-    <p>Genoa → Olbia runs about <b>8 times a week</b> in summer — frequent but not daily. Verify a flight on <b>Tue Aug 4</b> on Volotea or ITA. If the day has none, the clean fallback is <b>Genoa → Rome → Olbia on ITA</b> the same day; an overnight ferry exists but isn't worth it.</p></div>
-  <div class="flag"><h3>The return is on two tickets</h3>
-    <p>American doesn't fly Olbia, so the <b>Olbia → Rome feeder is a separate ticket</b> from the American transatlantic. This plan leaves ~5 hrs in Rome, which is comfortable. For zero risk, fly Olbia → Rome the <b>evening before</b> and overnight at an FCO airport hotel — at the cost of one Sardinia night.</p></div>
+  <div class="flag"><h3>Two pieces still open</h3>
+    <p>The <b>Olbia → Milan return (Aug 7)</b> and the <b>Aug 7–9 plan</b> aren't locked. Everything else — the Air Europa round trip, the Aug 4 easyJet hop, both hotels and the car — is set.</p></div>
+  <div class="flag"><h3>Milan restaurants in August</h3>
+    <p>Milan empties out around <b>Ferragosto (Aug 15)</b>; your Aug 7–8 dates fall before the heaviest closures, but reconfirm each restaurant directly. Hotel restaurants (Casa Cipriani, Caruso) are the safest bets.</p></div>
   <div class="flag"><h3>Times will firm up closer in</h3>
-    <p>Flight and train times above come from current schedules; reconfirm exact departures and seats when you book, ideally <b>6–8 weeks out</b>.</p></div>
+    <p>Flight times above are from current schedules; reconfirm exact departures and the rental details when you book, ideally <b>6–8 weeks out</b>.</p></div>
 </div></section>
 
 <!-- KNOW BEFORE -->
@@ -513,41 +574,41 @@
   <div class="sec-head"><span class="eyebrow">Before you go</span><h2 class="display">Know before you go</h2></div>
   <div class="kbg">
     <div><h3>Timing &amp; events</h3><ul>
-      <li><b>Peak season:</b> Aug 1–7 is the busiest, priciest week on both coasts — book hotels, transfers, the boat and dinners well ahead.</li>
+      <li><b>Peak season:</b> early August is the busiest, priciest week on both coasts — book hotels, transfers, the boat and dinners well ahead.</li>
       <li><b>Cinque Terre on a Monday (Aug 3)</b> is busy but a touch calmer than the weekend; early train and afternoon ferry is the way.</li>
       <li><b>Porto Cervo</b> is at its glittering peak in early August — worth a dinner reservation everywhere.</li>
-      <li><b>Ferragosto (Aug 15)</b> falls after your trip, so you miss the single most chaotic day.</li>
+      <li><b>Ferragosto (Aug 15)</b> falls after the trip, so you miss the most chaotic day — but it does thin out Milan's restaurants.</li>
     </ul></div>
     <div><h3>Pacing for two</h3><ul>
-      <li><b>The arrival train</b> is long after a redeye — Business/Executive seats and a relaxed boarding make it restful, not tiring.</li>
-      <li><b>Cinque Terre</b> villages are steep — flat Monterosso plus Vernazza, by train and ferry, skip the trails.</li>
+      <li><b>The arrival day</b> is long — a redeye, a Madrid connection, then a drive. Keep the first evening loose.</li>
+      <li><b>Cinque Terre</b> villages are steep — flat Monterosso plus Vernazza, by train and ferry, skip the trails and the car.</li>
       <li>Your <b>Grand Hotel</b> has a direct path to Cala Granu beach — no boat shuttle.</li>
-      <li>The <b>La Maddalena</b> boat day is seated and shaded.</li>
+      <li>The <b>La Maddalena</b> boat day is seated and shaded; a private gozzo avoids the swim-to-shore.</li>
     </ul></div>
     <div class="allergy"><h3>A note on the fish allergy</h3><ul>
-      <li>Both coasts love seafood — flag it every time: <i>"Sono allergica al pesce e ai frutti di mare."</i> In Liguria, watch for <b>anchovies (acciughe)</b> hidden in sauces.</li>
+      <li>Both coasts love seafood — flag it every time: <i>"Sono allergica al pesce e ai frutti di mare"</i> (or <i>"grave allergia a pesce e crostacei"</i>). In Liguria, watch for <b>anchovies (acciughe)</b> hidden in sauces.</li>
       <li><b>Liguria is easy:</b> <b>pesto</b> (trofie/trenette), <b>focaccia</b>, <b>farinata</b>, <b>pansoti with walnut sauce</b> — all fish-free.</li>
       <li><b>Sardinia too:</b> <b>porceddu</b> (roast suckling pig), <b>culurgiones</b>, <b>pane carasau</b>, <b>pecorino</b>, and <b>seadas</b> for dessert.</li>
-      <li>Carry an allergy card in Italian and keep meds on hand, especially on boat days.</li>
+      <li><b>Milan too:</b> <b>cotoletta</b>, <b>risotto alla milanese</b>, <b>ossobuco</b> — all naturally fish-free. Carry an allergy card and meds, especially on boat days.</li>
     </ul></div>
-    <div><h3>Booking notes</h3><ul>
-      <li><b>One round trip, one train, two island flights</b> — far fewer moving parts than two separate fly-in legs.</li>
-      <li>Confirm the Tue Aug 4 Genoa → Olbia flight early.</li>
-      <li>Keep the Olbia → Rome feeder's buffer generous, since it's a separate ticket.</li>
-      <li>Reserve the boat, the ferry, Cinque Terre passes and dinners ahead.</li>
+    <div><h3>Driving &amp; parking</h3><ul>
+      <li>Rental car <b>MXP ⇄ MXP</b> — keep it for Liguria, drop it before the Olbia flight.</li>
+      <li><b>Central Santa Margherita parking is tight</b> — use the Imperiale's parking and walk/ferry into town.</li>
+      <li><b>No car in Sardinia</b> — private transfers and the hotel cover Porto Cervo; add a driver for beach/inland days.</li>
+      <li>Watch for <b>ZTL</b> limited-traffic zones in the village centres.</li>
     </ul></div>
     <div><h3>Good to know</h3><ul>
       <li>Italy uses Type F/L plugs, 230V — bring adapters.</li>
       <li>Carry some cash; smaller spots can be card-shy.</li>
-      <li>No rental car needed — train, ferry and private transfers cover everything.</li>
       <li>Validate regional train tickets before boarding where required.</li>
+      <li>Reconfirm the Milan airport on the Aug 7 return matches the Aug 9 Milan → Madrid departure.</li>
     </ul></div>
   </div>
 </div></section>
 
 <footer><div class="wrap">
-  <div class="display">Riviera &amp; Sardinia · Fri Jul 31 – Fri Aug 7, 2026.</div>
-  <p>American round trip into and out of Rome · a scenic Frecciarossa down to the Portofino Coast · 3 nights Rapallo with Portofino, Santa Margherita and a full Cinque Terre day · one island hop to Sardinia · 3 nights at the Grand Hotel in Porto Cervo with emerald beaches and a La Maddalena boat day · same-day return via Rome. The same slow, spa-forward pace as Puglia and Sicily — two coasts, with Grandma.</p>
+  <div class="display">Riviera &amp; Sardinia · Fri Jul 31 – Sun Aug 9, 2026.</div>
+  <p>Air Europa round trip via Madrid · a rental car down to <b>Santa Margherita Ligure</b> (Imperiale Palace) for Portofino and a full Cinque Terre day · one island hop, <b>Milan → Olbia</b>, to three nights at the <b>Grand Hotel in Porto Cervo</b> with emerald beaches and a La Maddalena boat day · an open Milan finish · home the same day via Madrid. A slow, spa-forward pace across two coasts — built around the fish allergy, with the best classic Italian tables along the way.</p>
 </div></footer>
 
 </body>
